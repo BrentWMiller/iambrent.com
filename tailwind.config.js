@@ -10,6 +10,17 @@ module.exports = {
     fontFamily: {
       body: ['Nunito'],
       display: ['Nunito']
+    },
+    extend: {
+      colors: {
+        primary: '#111779', // dark blue
+        secondary: '#31A3FD', //light blue,
+        accent: '#FFE975' // yellow
+      },
+      fontSize: {
+        '7xl': '5rem',
+        '8xl': '6rem'
+      }
     }
   },
   variants: {},

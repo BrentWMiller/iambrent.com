@@ -46,6 +46,18 @@ export default {
    */
   build: {
     /*
+     ** PostCSS plugins
+     */
+    postcss: {
+      // Add plugin names as key and arguments as value
+      // Install them before as dependencies with npm or yarn
+      plugins: {
+        // Disable a plugin by passing false as value
+        'postcss-nested': {},
+        'postcss-custom-properties': {}
+      }
+    },
+    /*
      ** You can extend webpack config here
      */
     extend(config, ctx) {}

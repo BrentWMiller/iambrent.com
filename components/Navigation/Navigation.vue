@@ -1,6 +1,8 @@
 <template>
   <header>
-    <div class="container flex justify-between align-middle mx-auto mt-4">
+    <div
+      class="container flex justify-between align-middle mx-auto mt-4 text-primary"
+    >
       <div class="text-xl font-semibold">brent</div>
       <nav class="flex align-middle">
         <ul class="flex align-middle">

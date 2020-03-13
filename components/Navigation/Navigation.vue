@@ -1,28 +1,20 @@
 <template>
-  <header>
-    <div
-      class="container flex justify-between align-middle mx-auto mt-4 text-primary"
-    >
+  <div class="absolute z-10 w-full">
+    <header class="container flex justify-between pt-4 mx-auto text-primary">
       <div class="text-xl font-semibold">brent</div>
-      <nav class="flex align-middle">
-        <ul class="flex align-middle">
+      <nav class="flex">
+        <ul class="flex">
           <li class="px-4 py-2">
-            <a href="#" class="uppercase tracking-wider text-base">
-              Projects
-            </a>
+            <a href="#" class="text-base tracking-wider uppercase">Projects</a>
           </li>
           <li class="px-4 py-2">
-            <a href="#" class="uppercase tracking-wider text-base">
-              Articles
-            </a>
+            <a href="#" class="text-base tracking-wider uppercase">Articles</a>
           </li>
-          <li class="pl-4 py-2">
-            <a href="#" class="uppercase tracking-wider text-base">
-              Experience
-            </a>
+          <li class="py-2 pl-4">
+            <a href="#" class="text-base tracking-wider uppercase">Experience</a>
           </li>
         </ul>
       </nav>
-    </div>
-  </header>
+    </header>
+  </div>
 </template>

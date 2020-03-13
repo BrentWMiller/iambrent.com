@@ -3,6 +3,10 @@
 @import 'tailwindcss/components';
 /* purgecss end ignore */
 
+/* base */
 @import './fonts.css';
 
+/* components */
+
+/* tailwind util */
 @import 'tailwindcss/utilities';

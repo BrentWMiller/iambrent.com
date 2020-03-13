@@ -1,16 +1,18 @@
 <template>
-  <div class="font-body">
-    <Navigation />
-    <nuxt />
+  <div class="flex flex-col h-screen font-body text-dark-primary">
+    <navigation />
+    <div class="flex-grow">
+      <nuxt />
+    </div>
   </div>
 </template>
 
 <script>
-import Navigation from '~/components/Navigation/Navigation.vue'
+import navigation from '~/components/navigation/navigation.vue'
 
 export default {
   components: {
-    Navigation
+    navigation
   }
 }
 </script>

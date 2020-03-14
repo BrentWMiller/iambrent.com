@@ -1,6 +1,8 @@
 <template>
   <section class="container flex items-center justify-center h-full mx-auto">
-    <div class="absolute top-0 left-0 w-1/2 h-full -ml-12 bg-secondary-300"></div>
+    <div
+      class="absolute top-0 left-0 w-1/2 h-full -ml-12 bg-secondary-300"
+    ></div>
     <div class="relative flex flex-col">
       <h1 class="font-extrabold leading-none text-8xl text-primary">
         I'm a
@@ -13,20 +15,21 @@
           class="font-bold hover:underline text-primary"
           href="https://skycatchfire.com"
           target="_blank"
-        >SKYCATCHFIRE</a>.
+          >SKYCATCHFIRE</a
+        >.
       </p>
     </div>
-    <dots class="absolute top-9/12 left-10/12" />
-    <dots class="absolute top-2/12 left-5/12" />
+    <Dots class="absolute top-9/12 left-10/12" />
+    <Dots class="absolute top-2/12 left-5/12" />
   </section>
 </template>
 
 <script>
-import dots from '~/components/dots/dots.vue'
+import Dots from '~/components/dots/Dots.vue'
 
 export default {
   components: {
-    dots
+    Dots
   }
 }
 </script>

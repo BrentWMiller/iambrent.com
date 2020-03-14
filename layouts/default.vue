@@ -1,10 +1,12 @@
 <template>
   <div>
-    <navigation />
+    <Navigation />
     <div class="font-body text-dark-primary">
       <nuxt />
     </div>
-    <footer class="container flex justify-between w-full py-3 mx-auto text-xs text-gray-500 h-half">
+    <footer
+      class="container flex justify-between w-full py-3 mx-auto text-xs text-gray-500 h-half"
+    >
       <span>Built with Vue, Tailwind CSS, and some sweet tunes</span>
       <span>&copy; Brent Miller</span>
     </footer>
@@ -12,11 +14,11 @@
 </template>
 
 <script>
-import navigation from '~/components/navigation/navigation.vue'
+import Navigation from '~/components/navigation/Navigation.vue'
 
 export default {
   components: {
-    navigation
+    Navigation
   }
 }
 </script>

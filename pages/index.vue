@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex flex-col h-screen mb-32">
-      <hero class="flex-grow" />
+      <Hero class="flex-grow" />
     </div>
     <div class="container w-5/12 mx-auto mb-20 text-center">
       <h2 class="mb-2 text-lg font-semibold uppercase text-secondary-500">
@@ -20,11 +20,11 @@
 </template>
 
 <script>
-import hero from '~/components/hero/hero.vue'
+import Hero from '~/components/hero/Hero.vue'
 
 export default {
   components: {
-    hero
+    Hero
   },
   head() {
     return {

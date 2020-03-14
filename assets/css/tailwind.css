@@ -4,7 +4,8 @@
 /* purgecss end ignore */
 
 /* base */
-@import './fonts.css';
+@import './fonts';
+@import './page-transitions';
 
 /* components */
 

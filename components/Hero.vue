@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import Dots from '../dots/Dots'
+import Dots from '~/components/Dots'
 
 export default {
   components: {

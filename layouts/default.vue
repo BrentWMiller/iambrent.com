@@ -1,9 +1,7 @@
 <template>
-  <div>
+  <div class="flex flex-col min-h-screen font-body text-dark-primary">
     <Navigation />
-    <div class="font-body text-dark-primary">
-      <nuxt />
-    </div>
+    <nuxt class="flex-grow" />
     <footer
       class="container flex justify-between w-full py-3 mx-auto text-xs text-gray-500 h-half"
     >

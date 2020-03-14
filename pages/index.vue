@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import Hero from '~/components/hero/Hero.vue'
+import Hero from '../components/hero/Hero'
 
 export default {
   components: {

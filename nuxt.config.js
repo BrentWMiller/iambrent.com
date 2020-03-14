@@ -1,5 +1,5 @@
 export default {
-  mode: 'spa',
+  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -39,6 +39,21 @@ export default {
    ** Nuxt.js modules
    */
   modules: ['@nuxtjs/pwa'],
+  /*
+   ** Generate
+   */
+  generate: {
+    routes: function() {
+      const fs = require('fs')
+      const path = require('path')
+      return fs.readdirSync('./assets/content/project').map((file) => {
+        return {
+          route: `/project/${path.parse(file).name}`, // Return the slug
+          payload: require(`./assets/content/project/${file}`)
+        }
+      })
+    }
+  },
   /*
    ** Build configuration
    */

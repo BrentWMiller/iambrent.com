@@ -11,16 +11,20 @@
         >
           <dots class="absolute left-0 -mt-4 -ml-16 -z-1" />Projects
         </h2>
-        <h3 class="text-5xl font-bold text-primary">Some of my favorites</h3>
-        <ul class="flex">
-          <li v-for="project in projects" :key="project.slug" class="block p-3 border">
-            <nuxt-link :to="`projects/${project.slug}`">{{ project.title }}</nuxt-link>
+        <h3 class="mb-12 text-5xl font-semibold text-primary">Some of my favorites</h3>
+
+        <ul class="grid grid-cols-3 gap-8">
+          <li v-for="project in projects" :key="project.slug">
+            <nuxt-link class="block p-10 bg-secondary-300" :to="`projects/${project.slug}`">
+              <h4 class="mb-4 text-2xl font-bold leading-tight text-primary">{{ project.title }}</h4>
+              <p class="text-dark-secondary">{{ project.description }}</p>
+            </nuxt-link>
           </li>
         </ul>
 
         <nuxt-link
           to="/projects"
-          class="inline-flex items-center px-6 py-3 mt-6 text-lg font-bold text-primary bg-accent"
+          class="inline-flex items-center px-6 py-3 mt-12 text-lg font-bold text-primary bg-accent"
         >
           See all of my projects
           <svg

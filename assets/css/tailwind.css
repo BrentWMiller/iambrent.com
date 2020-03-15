@@ -3,11 +3,8 @@
 @import 'tailwindcss/components';
 /* purgecss end ignore */
 
-/* base */
 @import './fonts';
 @import './page-transitions';
-
-/* components */
 
 /* tailwind util */
 @import 'tailwindcss/utilities';

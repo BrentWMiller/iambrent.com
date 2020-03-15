@@ -66,7 +66,13 @@ module.exports = {
         '8xl': '6rem'
       },
       spacing: ratios,
-      inset: ratios
+      inset: ratios,
+      zIndex: {
+        '-1': '-1',
+        '1': '1',
+        '2': '2',
+        '3': '3'
+      }
     }
   },
   variants: {},

@@ -15,8 +15,8 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Image', name: 'image', widget: 'image', required: false }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false }

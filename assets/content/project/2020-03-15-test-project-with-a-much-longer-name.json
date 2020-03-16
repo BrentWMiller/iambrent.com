@@ -3,5 +3,6 @@
   "title": "Test project with a much longer name",
   "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, minima maxime voluptas ex quos animi itaque eos officia expedita eligendi provident.",
   "body": "This is a test",
-  "image": "/img/christopher-gower-m_hrflhgabo-unsplash.jpg"
+  "image": "/img/christopher-gower-m_hrflhgabo-unsplash.jpg",
+  "featured": true
 }

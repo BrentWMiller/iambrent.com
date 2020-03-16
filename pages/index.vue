@@ -4,32 +4,66 @@
       <hero />
     </div>
 
-    <div class="container mx-auto my-40">
+    <div class="container mx-auto mt-40">
       <div class="w-10/12 mx-auto">
         <h2
           class="relative flex items-center text-lg font-bold tracking-wider uppercase text-secondary-500"
         >
           <dots class="absolute left-0 -mt-4 -ml-16 -z-1" />Projects
         </h2>
-        <h3 class="mb-12 text-5xl font-semibold text-primary">Some of my favorites</h3>
+        <h3 class="mb-12 text-5xl font-semibold text-primary">
+          Some of my favorites
+        </h3>
+      </div>
+    </div>
 
-        <ul class="grid grid-cols-3 gap-8">
-          <li
-            v-for="project in projects"
-            :key="project.slug"
-            class="bg-no-repeat bg-cover rounded-lg bg-secondary-300"
-            :style="{ backgroundImage: `url(${project.image})` }"
-          >
-            <nuxt-link class="block p-10" :to="`projects/${project.slug}`">
-              <h4 class="mb-4 text-2xl font-bold leading-tight text-primary">{{ project.title }}</h4>
-              <p class="text-dark-secondary">{{ project.description }}</p>
-            </nuxt-link>
-          </li>
-        </ul>
+    <div class="overflow-hidden overflow-x-auto">
+      <div class="container mx-auto">
+        <div class="w-10/12 mx-auto">
+          <ul class="flex mb-12">
+            <li
+              v-for="project in projects"
+              :key="project.slug"
+              class="relative flex items-end flex-shrink-0 w-5/12 mr-8 overflow-hidden bg-no-repeat bg-cover rounded-lg h-100 bg-secondary-300"
+              :style="{
+                backgroundImage: project.image ? `url(${project.image})` : ''
+              }"
+            >
+              <nuxt-link
+                class="relative block p-8 z-1"
+                :to="`projects/${project.slug}`"
+              >
+                <h4
+                  class="mb-2 text-2xl font-bold leading-tight"
+                  :class="project.image ? 'text-white' : 'text-primary'"
+                >
+                  {{ project.title }}
+                </h4>
+                <p
+                  :class="
+                    project.image
+                      ? 'text-light-secondary'
+                      : 'text-dark-secondary'
+                  "
+                >
+                  {{ project.description }}
+                </p>
+              </nuxt-link>
+              <div
+                v-if="project.image"
+                class="absolute top-0 left-0 w-full h-full bg-g-black blend-multiply"
+              ></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+    <div class="container mx-auto mt-12 mb-40">
+      <div class="w-10/12 mx-auto">
         <nuxt-link
           to="/projects"
-          class="inline-flex items-center px-6 py-3 mt-12 text-lg font-bold text-primary bg-accent"
+          class="inline-flex items-center px-6 py-3 text-lg font-bold text-primary bg-accent"
         >
           See all of my projects
           <svg
@@ -66,7 +100,7 @@ export default {
   },
   computed: {
     projects() {
-      return this.$store.state.projects
+      return this.$store.state.projects.filter((project) => project.featured)
     }
   }
 }

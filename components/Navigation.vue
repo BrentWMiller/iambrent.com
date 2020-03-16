@@ -5,12 +5,7 @@
       <nav class="flex">
         <ul class="flex">
           <li class="px-4 py-2">
-            <nuxt-link
-              to="/projects"
-              class="text-base tracking-wider uppercase"
-            >
-              Projects
-            </nuxt-link>
+            <nuxt-link to="/projects" class="text-base font-bold tracking-wider uppercase">Projects</nuxt-link>
           </li>
         </ul>
       </nav>

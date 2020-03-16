@@ -72,9 +72,23 @@ module.exports = {
         '1': '1',
         '2': '2',
         '3': '3'
+      },
+      height: {
+        '80': '20rem',
+        '100': '25rem',
+        '128': '32rem'
       }
-    }
+    },
+    gradients: (theme) => ({
+      'g-primary': ['to top', theme('colors.primary'), 'transparent'],
+      'g-black': ['to top', theme('colors.black'), 'transparent']
+    })
   },
-  variants: {},
-  plugins: []
+  variants: {
+    gradients: ['responsive']
+  },
+  plugins: [
+    require('tailwindcss-plugins/gradients'),
+    require('tailwindcss-blend-mode')()
+  ]
 }

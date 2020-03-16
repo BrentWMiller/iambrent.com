@@ -23,6 +23,8 @@
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/tailwindcss": "^1.0.0",
     "babel-eslint": "^10.0.1",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "tailwindcss-blend-mode": "^1.0.0",
+    "tailwindcss-plugins": "^0.3.0"
   }
 }

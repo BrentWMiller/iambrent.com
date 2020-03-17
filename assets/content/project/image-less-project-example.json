@@ -1,5 +1,6 @@
 {
   "date": "2020-03-16T03:34:41.980Z",
   "title": "Image-less project example",
-  "description": "This doesn't need an image to work."
+  "description": "This doesn't need an image to work.",
+  "featured": true
 }

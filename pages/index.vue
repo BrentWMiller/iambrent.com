@@ -24,13 +24,13 @@
             <li
               v-for="project in projects"
               :key="project.slug"
-              class="relative flex items-end flex-shrink-0 w-5/12 mr-8 overflow-hidden bg-no-repeat bg-cover rounded-lg h-100 bg-secondary-300"
+              class="relative flex flex-shrink-0 w-5/12 mr-8 overflow-hidden bg-no-repeat bg-cover rounded-lg h-100 bg-secondary-300"
               :style="{
                 backgroundImage: project.image ? `url(${project.image})` : ''
               }"
             >
               <nuxt-link
-                class="relative block p-8 z-1"
+                class="relative flex flex-col justify-end w-full h-full p-8 z-1"
                 :to="`projects/${project.slug}`"
               >
                 <h4
@@ -54,6 +54,8 @@
                 class="absolute top-0 left-0 w-full h-full bg-g-black blend-multiply"
               ></div>
             </li>
+
+            <li class="relative flex flex-shrink-0 w-2/12"></li>
           </ul>
         </div>
       </div>

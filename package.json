@@ -5,7 +5,7 @@
   "author": "Brent Miller",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "debug": "nuxt --open",
     "build": "nuxt build",
     "export": "nuxt export",
     "start": "nuxt start",

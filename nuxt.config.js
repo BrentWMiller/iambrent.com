@@ -1,4 +1,4 @@
-import IAB_CONFIG from './iab.config'
+import IAB_CONFIG from './iab.config';
 
 export default {
   /*
@@ -22,10 +22,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: IAB_CONFIG.description
-      }
+        content: IAB_CONFIG.description,
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   /*
    ** Customize the progress-bar color
@@ -49,29 +49,29 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
   ],
   /*
    ** Nuxt.js modules
    */
   modules: ['@nuxtjs/pwa', '@nuxtjs/markdownit'],
   markdownit: {
-    injected: true
+    injected: true,
   },
   /*
    ** Generate
    */
   generate: {
     routes: function() {
-      const fs = require('fs')
-      const path = require('path')
+      const fs = require('fs');
+      const path = require('path');
       return fs.readdirSync('./assets/content/project').map((file) => {
         return {
           route: `/project/${path.parse(file).name}`, // Return the slug
-          payload: require(`./assets/content/project/${file}`)
-        }
-      })
-    }
+          payload: require(`./assets/content/project/${file}`),
+        };
+      });
+    },
   },
   /*
    ** Build configuration
@@ -86,12 +86,12 @@ export default {
       plugins: {
         // Disable a plugin by passing false as value
         'postcss-nested': {},
-        'postcss-custom-properties': {}
-      }
+        'postcss-custom-properties': {},
+      },
     },
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
-  }
-}
+    extend(config, ctx) {},
+  },
+};

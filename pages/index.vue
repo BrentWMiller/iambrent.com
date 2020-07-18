@@ -21,6 +21,7 @@
         <div class="w-10/12 mx-auto">
           <ul class="flex mb-12">
             <li
+              v-dragscroll:nochilddrag
               v-for="project in projects"
               :key="project.slug"
               class="relative flex flex-shrink-0 w-5/12 mr-8 overflow-hidden bg-no-repeat bg-cover rounded-lg h-100 bg-secondary-300"

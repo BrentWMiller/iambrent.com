@@ -9,7 +9,7 @@ export const mutations = {
 };
 
 export const actions = {
-  async nuxtClientInit({ commit }) {
+  async nuxtServerInit({ commit }) {
     let files = await require.context('~/assets/content/project/', false, /\.json$/);
     let projects = files.keys().map((key) => {
       let res = files(key);

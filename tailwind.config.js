@@ -39,8 +39,8 @@ module.exports = {
   important: false,
   theme: {
     fontFamily: {
-      body: ['Nunito'],
-      display: ['Nunito']
+      body: ['Quicksand'],
+      display: ['Quicksand']
     },
     extend: {
       colors: {
@@ -62,8 +62,8 @@ module.exports = {
         }
       },
       fontSize: {
-        '7xl': '5rem',
-        '8xl': '6rem'
+        '80': '5rem',
+        '96': '6rem'
       },
       spacing: ratios,
       inset: ratios,

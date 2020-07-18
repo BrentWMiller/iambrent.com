@@ -12,11 +12,11 @@
 export default {
   components: {},
   async asyncData({ params, payload }) {
-    if (payload) return { project: payload }
+    if (payload) return { project: payload };
     else
       return {
-        project: await require(`~/assets/content/project/${params.project}.json`)
-      }
-  }
-}
+        project: await require(`~/assets/content/project/${params.project}.json`),
+      };
+  },
+};
 </script>

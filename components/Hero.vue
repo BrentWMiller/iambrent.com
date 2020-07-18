@@ -5,15 +5,13 @@
       <h1 class="font-extrabold leading-none text-96 text-primary">
         I'm a
         <br />
-        <span class="text-secondary-500">web developer</span>,
+        <span class="text-secondary-500">web developer</span>
+        ,
       </h1>
       <p class="mt-4 text-2xl">
         building web sites and web apps for
-        <a
-          class="font-bold hover:underline text-primary"
-          href="https://skycatchfire.com"
-          target="_blank"
-        >SKYCATCHFIRE</a>.
+        <a class="font-bold hover:underline text-primary" href="https://skycatchfire.com" target="_blank">SKYCATCHFIRE</a>
+        .
       </p>
     </div>
     <dots class="absolute top-9/12 left-10/12" />
@@ -22,5 +20,5 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>

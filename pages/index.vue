@@ -10,7 +10,7 @@
           <dots class="absolute left-0 -mt-4 -ml-16 -z-1" />
           Projects
         </h2>
-        <h3 class="mb-12 text-5xl font-semibold text-primary">
+        <h3 class="mb-12 text-5xl font-semibold text-primary-500">
           Some of my favorites
         </h3>
       </div>
@@ -23,13 +23,13 @@
             <li
               v-for="project in projects"
               :key="project.slug"
-              class="relative flex flex-shrink-0 w-5/12 mr-8 overflow-hidden bg-no-repeat bg-cover rounded-lg h-100 bg-secondary-300"
+              class="relative flex flex-shrink-0 w-5/12 mr-8 overflow-hidden bg-no-repeat bg-cover rounded-lg h-100 bg-secondary-50"
               :style="{
                 backgroundImage: project.image ? `url(${project.image})` : '',
               }"
             >
               <nuxt-link class="relative flex flex-col justify-end w-full h-full p-8 z-1" :to="`projects/${project.slug}`">
-                <h4 class="mb-2 text-2xl font-bold leading-tight" :class="project.image ? 'text-white' : 'text-primary'">
+                <h4 class="mb-2 text-2xl font-bold leading-tight" :class="project.image ? 'text-white' : 'text-primary-500'">
                   {{ project.title }}
                 </h4>
                 <p :class="project.image ? 'text-light-secondary' : 'text-dark-secondary'">
@@ -47,10 +47,10 @@
 
     <div class="container mx-auto mt-12 mb-40">
       <div class="w-10/12 mx-auto">
-        <nuxt-link to="/projects" class="inline-flex items-center px-6 py-3 text-lg font-bold text-primary bg-accent">
+        <nuxt-link to="/projects" class="inline-flex items-center px-6 py-3 text-lg font-bold text-primary-500 bg-accent-500">
           See all of my projects
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 ml-4">
-            <path class="text-primary" d="M14.59 13H7a1 1 0 010-2h7.59l-2.3-2.3a1 1 0 111.42-1.4l4 4a1 1 0 010 1.4l-4 4a1 1 0 01-1.42-1.4l2.3-2.3z" />
+            <path class="text-primary-500" d="M14.59 13H7a1 1 0 010-2h7.59l-2.3-2.3a1 1 0 111.42-1.4l4 4a1 1 0 010 1.4l-4 4a1 1 0 01-1.42-1.4l2.3-2.3z" />
           </svg>
         </nuxt-link>
       </div>

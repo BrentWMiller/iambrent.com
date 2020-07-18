@@ -1,8 +1,8 @@
 <template>
   <section class="container flex items-center justify-center h-full mx-auto">
-    <div class="absolute top-0 left-0 w-1/2 h-full -ml-12 bg-secondary-300"></div>
+    <div class="absolute top-0 left-0 w-1/2 h-full -ml-12 bg-secondary-50"></div>
     <div class="relative flex flex-col">
-      <h1 class="font-extrabold leading-none text-96 text-primary">
+      <h1 class="font-extrabold leading-none text-96 text-primary-500">
         I'm a
         <br />
         <span class="text-secondary-500">web developer</span>
@@ -10,7 +10,7 @@
       </h1>
       <p class="mt-4 text-2xl">
         building web sites and web apps for
-        <a class="font-bold hover:underline text-primary" href="https://skycatchfire.com" target="_blank">SKYCATCHFIRE</a>
+        <a class="font-bold hover:underline text-primary-500" href="https://skycatchfire.com" target="_blank">SKYCATCHFIRE</a>
         .
       </p>
     </div>

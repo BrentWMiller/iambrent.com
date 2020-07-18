@@ -24,12 +24,10 @@ export default {
   },
   computed: {
     colors() {
-      const colors = theme.extend.colors;
-      return this.propertiesToArray(colors, '-');
+      return this.propertiesToArray(theme.extend.colors, '-');
     },
   },
   methods: {
-    loadColor(color) {},
     propertiesToArray(obj, delimiter = '.') {
       const isObject = (val) => typeof val === 'object' && !Array.isArray(val);
 

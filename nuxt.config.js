@@ -38,7 +38,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['@plugins/vue-dragscroll.js'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components

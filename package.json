@@ -16,7 +16,8 @@
     "@nuxtjs/pwa": "^3.0.0-0",
     "nuxt": "^2.13.3",
     "postcss-custom-properties": "^9.1.1",
-    "postcss-nested": "^4.2.3"
+    "postcss-nested": "^4.2.3",
+    "vue-dragscroll": "^2.1.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",

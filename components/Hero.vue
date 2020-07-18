@@ -2,7 +2,7 @@
   <section class="container flex items-center justify-center h-full mx-auto">
     <div class="absolute top-0 left-0 w-1/2 h-full -ml-12 bg-secondary-300"></div>
     <div class="relative flex flex-col">
-      <h1 class="font-extrabold leading-none text-8xl text-primary">
+      <h1 class="font-extrabold leading-none text-96 text-primary">
         I'm a
         <br />
         <span class="text-secondary-500">web developer</span>,
@@ -22,11 +22,5 @@
 </template>
 
 <script>
-import dots from '~/components/Dots'
-
-export default {
-  components: {
-    dots
-  }
-}
+export default {}
 </script>

@@ -77,5 +77,11 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  /**
+   * Auto component importing
+   */
+  components: {
+    dirs: ['~/components/']
   }
 }

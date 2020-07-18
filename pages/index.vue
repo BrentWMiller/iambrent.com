@@ -11,9 +11,7 @@
         >
           <dots class="absolute left-0 -mt-4 -ml-16 -z-1" />Projects
         </h2>
-        <h3 class="mb-12 text-5xl font-semibold text-primary">
-          Some of my favorites
-        </h3>
+        <h3 class="mb-12 text-5xl font-semibold text-primary">Some of my favorites</h3>
       </div>
     </div>
 
@@ -36,18 +34,14 @@
                 <h4
                   class="mb-2 text-2xl font-bold leading-tight"
                   :class="project.image ? 'text-white' : 'text-primary'"
-                >
-                  {{ project.title }}
-                </h4>
+                >{{ project.title }}</h4>
                 <p
                   :class="
                     project.image
                       ? 'text-light-secondary'
                       : 'text-dark-secondary'
                   "
-                >
-                  {{ project.description }}
-                </p>
+                >{{ project.description }}</p>
               </nuxt-link>
               <div
                 v-if="project.image"
@@ -85,14 +79,7 @@
 </template>
 
 <script>
-import hero from '~/components/Hero'
-import dots from '~/components/Dots'
-
 export default {
-  components: {
-    hero,
-    dots
-  },
   head() {
     return {
       script: [

@@ -5,7 +5,7 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  mode: 'spa',
+  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -33,7 +33,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@plugins/vue-dragscroll.js'],
+  plugins: [{ src: '~/plugins/vue-dragscroll', ssr: false }],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components

@@ -123,6 +123,7 @@ module.exports = {
         },
       },
       fontSize: {
+        '48': '3rem',
         '80': '5rem',
         '96': '6rem',
       },

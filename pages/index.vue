@@ -4,7 +4,7 @@
       <hero />
     </div>
 
-    <div class="container mx-auto mt-40">
+    <!-- <div class="container mx-auto mt-40">
       <div class="w-10/12 mx-auto">
         <h2 class="relative flex items-center text-lg font-bold tracking-wider uppercase text-secondary-500">
           <dots class="absolute left-0 -mt-4 -ml-16 -z-1" />
@@ -54,7 +54,7 @@
           </svg>
         </nuxt-link>
       </div>
-    </div>
+    </div>-->
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col min-h-screen font-body text-dark-primary">
-    <navigation />
+    <!-- <navigation /> -->
     <nuxt class="flex-grow" />
     <footer class="w-full py-12 bg-primary-500 h-half">
       <div class="container flex justify-between mx-auto text-xs text-secondary-500">

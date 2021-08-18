@@ -1,5 +1,5 @@
 <template>
-  <p class="code-block">let theme = THEMES.<button class="text-gray-500">dark</button></p>
+  <p class="code-block">let theme = THEMES.<button class="code-button">dark</button></p>
 </template>
 
 <script>

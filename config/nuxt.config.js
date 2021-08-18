@@ -26,6 +26,7 @@ export default {
     '@/assets/css/scaffolding.css',
     '@/assets/css/inputs.css',
     '@/assets/css/links.css',
+    '@/assets/css/buttons.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

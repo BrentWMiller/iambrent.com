@@ -12,7 +12,7 @@
     </ul>
 
     <p class="code-block">
-      tasks.sort("random")
+      tasks.sort("<button class="code-button">random</button>")
     </p>
   </div>
 </template>

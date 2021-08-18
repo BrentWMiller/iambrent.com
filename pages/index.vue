@@ -2,8 +2,10 @@
   <div class="flex flex-col justify-between min-h-screen bg-site">
     <site-header />
 
-    <main class="my-20 space-y-40">
+    <main class="my-20 space-y-64">
       <intro />
+
+      <stats />
 
       <tasks />
 

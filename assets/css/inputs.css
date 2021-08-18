@@ -1,0 +1,14 @@
+.code-input {
+  @apply inline-block w-auto;
+  @apply text-gray-500;
+  @apply bg-transparent border-none;
+
+  &:hover {
+    @apply bg-gray-900;
+  }
+
+  &:focus {
+    outline: none;
+    @apply bg-gray-800;
+  }
+}

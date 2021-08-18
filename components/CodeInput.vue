@@ -1,5 +1,5 @@
 <template>
-  <input class="code-input" v-model="inputValue" :size="inputSize()" spellcheck="false">
+  <input class="code-input animate-pulse" v-model="inputValue" :size="inputSize()" spellcheck="false">
 </template>
 
 <script>

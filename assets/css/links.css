@@ -1,0 +1,15 @@
+.link {
+  &:after {
+    content: "=>";
+    @apply inline-block pl-3;
+    @apply text-darkula-pink;
+    @apply opacity-0;
+  }
+
+  &:hover,
+  &:focus {
+    &:after {
+      @apply opacity-100;
+    }
+  }
+}

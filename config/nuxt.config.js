@@ -22,9 +22,10 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/css/fonts.css',
+    '@/assets/css/typography.css',
     '@/assets/css/scaffolding.css',
     '@/assets/css/inputs.css',
-    '@/assets/css/typography.css',
+    '@/assets/css/links.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

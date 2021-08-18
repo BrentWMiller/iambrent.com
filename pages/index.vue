@@ -6,6 +6,8 @@
       <intro />
 
       <tasks />
+
+      <social-and-contact />
     </main>
 
     <site-footer />

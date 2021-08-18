@@ -6,7 +6,7 @@
     </p>
 
     <ul class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
-      <li v-for="task, index in tasks" :key="index" class="text-2xl text-white">
+      <li v-for="task, index in tasks" :key="index" class="text-2xl dark:text-white">
         {{ task.copy }}
       </li>
     </ul>

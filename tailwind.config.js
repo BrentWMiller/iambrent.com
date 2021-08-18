@@ -1,9 +1,10 @@
 module.exports = {
   mode: 'jit',
   purge: [
-     './components/*.vue',
-     './pages/**/*.vue',
-   ],
+    './components/*.vue',
+    './pages/**/*.vue',
+  ],
+  darkMode: 'class',
   theme: {
     container: {
       center: true,

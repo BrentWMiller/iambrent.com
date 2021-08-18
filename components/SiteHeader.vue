@@ -5,7 +5,7 @@
     <div class="flex items-center space-x-12">
       <theme-switcher />
 
-      <button class="text-white">
+      <button class="dark:text-white">
         toggleMenu<span class="text-darkula-blue">()</span>
       </button>
     </div>

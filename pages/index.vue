@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-between min-h-screen bg-site">
+  <div class="flex flex-col justify-between min-h-screen dark:bg-site">
     <site-header />
 
     <main class="my-20 space-y-64">
@@ -18,6 +18,8 @@
 
 <script>
 export default {
-
+  beforeMount() {
+    document.body.classList.add('dark');
+  }
 }
 </script>

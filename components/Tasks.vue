@@ -6,13 +6,13 @@
     </p>
 
     <ul class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
-      <li v-for="task, index in tasks" :key="index" class="text-2xl dark:text-white">
-        {{ task.copy }}
+      <li v-for="task, index in sortedTasks" :key="index" class="text-2xl dark:text-white">
+        {{ task }}
       </li>
     </ul>
 
     <p class="code-block">
-      tasks.sort("<button class="code-button">random</button>")
+      tasks.sort("<button @click="changeSort('length')" class="code-button">{{ currentSort }}</button>")
     </p>
   </div>
 </template>
@@ -21,26 +21,44 @@
 export default {
   data() {
     return {
+      currentSort: 'random',
+      sortOptions: ['random', 'length'],
       tasks: [
-        {
-          copy: "built a powerful section-based theme template for drupal and wordpress"
-        },
-        {
-          copy: "converted a college’s entire course catalog into dynamic web pages via importing",
-        },
-        {
-          copy: "built a fully custom e-commerce solution for a hardware store"
-        },
-        {
-          copy: "built a custom order management system"
-        },
-        {
-          copy: "built dozens of fully custom themes for drupal and wordpress"
-        },
-        {
-          copy: "redesigned and built a nationwide hospital equipment service system"
-        }
-      ]
+        "built a powerful section-based theme template for drupal and wordpress",
+        "converted a college’s entire course catalog into dynamic web pages via importing",
+        "built a fully custom e-commerce solution for a hardware store",
+        "built a custom order management system",
+        "built dozens of fully custom themes for drupal and wordpress",
+        "redesigned and built a nationwide hospital equipment service system",
+      ],
+    }
+  },
+  computed: {
+    sortedTasks() {
+      return this.tasks;
+    }
+  },
+  methods: {
+    changeSort(type) {
+      switch (type) {
+        case 'random':
+          this.tasks = this.shuffle(this.tasks);
+          break;
+
+        case 'length':
+          this.tasks = this.tasks.sort((a,b) => a.length - b.length);
+          break;
+      
+        default:
+          break;
+      }
+    },
+    shuffle(a) {
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
     }
   }
 }

@@ -1,8 +1,15 @@
 module.exports = {
+  mode: 'jit',
+  purge: [
+     './components/*.vue',
+     './pages/**/*.vue',
+   ],
   theme: {
     container: {
       center: true,
-      padding: '2rem',
+      padding: {
+        DEFAULT: '1rem',
+      }
     },
     extend: {
       colors: {

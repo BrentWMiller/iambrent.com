@@ -15,7 +15,7 @@
       tasks.sort("<button @click="changeSort('length')" class="code-button">{{ currentSort }}</button>")
     </p>
 
-    <p class="absolute right-0 text-4xl -bottom-10 text-darkula-pink">===</p>
+    <p class="absolute right-0 text-4xl -bottom-10 text-lightula-pink dark:text-darkula-pink">===</p>
   </div>
 </template>
 

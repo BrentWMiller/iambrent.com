@@ -8,6 +8,6 @@
 }
 
 .code-block {
-  @apply text-base leading-8 text-gray-700;
+  @apply text-base leading-8 text-soft-white-500 dark:text-gray-700;
   @apply sm:text-lg;
 }

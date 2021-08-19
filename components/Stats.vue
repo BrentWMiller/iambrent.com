@@ -40,17 +40,17 @@ export default {
         {
           value: 6,
           label: "Years of Experiece",
-          color: 'text-darkula-green'
+          color: 'text-lightula-green dark:text-darkula-green'
         },
         {
           value: 50,
           label: "Websites",
-          color: 'text-darkula-yellow'
+          color: 'text-lightula-yellow dark:text-darkula-yellow'
         },
         {
           value: 5,
           label: "Web apps",
-          color: 'text-darkula-pink'
+          color: 'text-lightula-pink dark:text-darkula-pink'
         },
       ]
     }

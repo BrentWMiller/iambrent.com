@@ -43,52 +43,62 @@ export default {
         {
           id: 'wordpress',
           label: 'WordPress',
-          svg: require('@/assets/icons/wordpress.svg')
+          svg: require('@/assets/icons/wordpress.svg'),
+          svgLight: require('@/assets/icons/wordpress-light.svg')
         },
         {
           id: 'drupal',
           label: 'Drupal',
-          svg: require('@/assets/icons/drupal.svg')
+          svg: require('@/assets/icons/drupal.svg'),
+          svgLight: require('@/assets/icons/drupal-light.svg')
         },
         {
           id: 'firebase',
           label: 'Firebase',
-          svg: require('@/assets/icons/firebase.svg')
+          svg: require('@/assets/icons/firebase.svg'),
+          svgLight: require('@/assets/icons/firebase-light.svg')
         },
         {
           id: 'tailwind',
           label: 'Tailwind',
-          svg: require('@/assets/icons/tailwind.svg')
+          svg: require('@/assets/icons/tailwind.svg'),
+          svgLight: require('@/assets/icons/tailwind-light.svg')
         },
         {
           id: 'shopify',
           label: 'Shopify',
-          svg: require('@/assets/icons/shopify.svg')
+          svg: require('@/assets/icons/shopify.svg'),
+          svgLight: require('@/assets/icons/shopify-light.svg')
         },
         {
           id: 'vue',
           label: 'Vue',
-          svg: require('@/assets/icons/vue.svg')
+          svg: require('@/assets/icons/vue.svg'),
+          svgLight: require('@/assets/icons/vue-light.svg')
         },
         {
           id: 'react',
           label: 'React',
-          svg: require('@/assets/icons/react.svg')
+          svg: require('@/assets/icons/react.svg'),
+          svgLight: require('@/assets/icons/react-light.svg')
         },
         {
           id: 'angular',
           label: 'Angular',
-          svg: require('@/assets/icons/angular.svg')
+          svg: require('@/assets/icons/angular.svg'),
+          svgLight: require('@/assets/icons/angular-light.svg')
         },
         {
           id: 'bootstrap',
           label: 'Bootstrap',
-          svg: require('@/assets/icons/bootstrap.svg')
+          svg: require('@/assets/icons/bootstrap.svg'),
+          svgLight: require('@/assets/icons/bootstrap-light.svg')
         },
         {
           id: 'git',
           label: 'Git',
-          svg: require('@/assets/icons/git.svg')
+          svg: require('@/assets/icons/git.svg'),
+          svgLight: require('@/assets/icons/git-light.svg')
         }
       ]
     }

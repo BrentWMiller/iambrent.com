@@ -6,7 +6,7 @@
       <theme-switcher />
 
       <button class="dark:text-white">
-        toggleMenu<span class="text-darkula-blue">()</span>
+        toggleMenu<span class="text-lightula-blue dark:text-darkula-blue">()</span>
       </button>
     </div>
   </header>

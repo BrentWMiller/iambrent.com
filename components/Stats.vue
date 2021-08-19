@@ -1,11 +1,11 @@
 <template>
-  <div class="container relative pt-40">
+  <div class="container relative pt-36">
 
-<div class="absolute left-0 -top-64 code-block">
+<div class="absolute -left-10 -top-64 code-block">
 const stats = [
 <template v-for="stat, index in stats"><pre :key="index">
   {
-    value: <code-input :initial-value="stat.value" @update="updateStat($event, index)"/>,
+    value: <code-input :initial-value="stat.value" @update="updateStat($event, index)" />,
     label: {{ stat.label }}
   }<span v-if="index < stats.length - 1">,</span>
 </pre></template>

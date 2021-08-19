@@ -6,7 +6,7 @@
     </p>
 
     <ul class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
-      <li v-for="task, index in sortedTasks" :key="index" class="text-2xl dark:text-white">
+      <li v-for="task, index in sortedTasks" :key="index" class="text-2xl font-medium dark:text-white">
         {{ task }}
       </li>
     </ul>

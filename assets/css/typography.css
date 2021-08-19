@@ -3,6 +3,10 @@
   @apply md:text-6xl lg:text-7xl;
 }
 
+.heading-2 {
+  @apply text-4xl font-normal leading-tight;
+}
+
 .code-block {
   @apply text-base leading-8 text-gray-700;
   @apply sm:text-lg;

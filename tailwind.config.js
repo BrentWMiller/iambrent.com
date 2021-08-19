@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   mode: 'jit',
   purge: [
@@ -14,6 +16,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        gray: colors.trueGray,
         site: '#0e0e0e',
         darkula: {
           green: '#4CE470',

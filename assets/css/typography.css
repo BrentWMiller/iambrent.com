@@ -4,7 +4,8 @@
 }
 
 .heading-2 {
-  @apply text-4xl font-normal leading-tight;
+  @apply text-2xl font-normal leading-tight;
+  @apply xl:text-4xl;
 }
 
 .code-block {

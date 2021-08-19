@@ -1,5 +1,5 @@
 <template>
-  <div class="container space-y-8">
+  <div class="container relative space-y-8">
     <p class="code-block">
       // just some tasks i've helped tackle<br />
       const tasks =
@@ -14,6 +14,8 @@
     <p class="code-block">
       tasks.sort("<button @click="changeSort('length')" class="code-button">{{ currentSort }}</button>")
     </p>
+
+    <p class="absolute right-0 text-4xl -bottom-10 text-darkula-pink">===</p>
   </div>
 </template>
 

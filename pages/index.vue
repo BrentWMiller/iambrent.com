@@ -2,7 +2,7 @@
   <div class="flex flex-col justify-between min-h-screen overflow-hidden bg-site dark:bg-site-dark">
     <site-header />
 
-    <main class="my-20 space-y-64">
+    <main class="my-12 space-y-32 md:my-20 md:space-y-64">
       <intro />
 
       <tech />

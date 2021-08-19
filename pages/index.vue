@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-between min-h-screen bg-site dark:bg-site-dark">
+  <div class="flex flex-col justify-between min-h-screen overflow-hidden bg-site dark:bg-site-dark">
     <site-header />
 
     <main class="my-20 space-y-64">

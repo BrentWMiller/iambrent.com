@@ -1,9 +1,8 @@
 <template>
-  <div class="container relative flex items-center space-x-10">
-    <h2 class="-mt-20 tech-title heading-2 dark:text-white">Using an ever-growing list of technology.</h2>
+  <div class="container relative items-center lg:space-x-10 lg:flex">
+    <h2 class="mb-10 lg:mb-0 lg:-mt-20 tech-title heading-2 dark:text-white">Using an ever-growing list of technology.</h2>
 
-    <div class="tech-grid">
-<pre class="absolute top-0 -right-20 code-block">
+<pre class="absolute -right-4 sm:right-0 top-16 sm:-top-10 lg:top-0 md:-right-20 code-block">
 /**
  * cms
  * libraries
@@ -12,8 +11,10 @@
 **/
 </pre>
 
-      <div class="mb-8 -ml-10 code-block">const frequentTech =</div>
-      <div class="grid grid-cols-5 gap-4">
+    <div class="relative flex-shrink-0 tech-grid">
+
+      <div class="mb-8 lg:-ml-10 code-block">const frequentTech =</div>
+      <div class="flex flex-wrap gap-4 mx-auto sm:grid sm:grid-cols-4 md:grid-cols-5">
         <tech-item
           v-for="tech in techItems"
           :key="tech.id"
@@ -22,7 +23,7 @@
       </div>
 
       <div class="flex items-end justify-between mt-6">
-        <p class="ml-12 code-block" aria-hidden="true">
+        <p class="lg:ml-12 code-block" aria-hidden="true">
           <span class="text-4xl">...</span>
         </p>
 
@@ -106,12 +107,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="postcss">
 .tech-title {
   max-width: 400px;
 }
 
 .tech-grid {
-  max-width: 885px;
+  @media (max-width: 1024px) {
+    max-width: 885px;
+  }
 }
 </style>

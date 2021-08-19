@@ -1,5 +1,23 @@
 <template>
-  <div class="container">
+  <div class="container relative pt-40">
+
+<div class="absolute left-0 -top-64 code-block">
+const stats = [
+<template v-for="stat, index in stats"><pre :key="index">
+  {
+    value: <code-input :initial-value="stat.value" @update="updateStat($event, index)"/>,
+    label: {{ stat.label }}
+  }<span v-if="index < stats.length - 1">,</span>
+</pre></template>
+]
+</div>
+
+<pre class="absolute top-0 right-0 code-block">
+{
+  value: number,
+  label: string
+}
+</pre>
 
     <div class="max-w-screen-lg mx-auto">
       <p class="mb-8 ml-8 code-block">for stat in stats</p>
@@ -10,6 +28,7 @@
         </li>
       </ul>
     </div>
+    
   </div>
 </template>
 
@@ -34,6 +53,12 @@ export default {
           color: 'text-darkula-pink'
         },
       ]
+    }
+  },
+  methods: {
+    updateStat(value, index) {
+      console.log(value, index);
+      this.stats[index].value = value ? value : 0;
     }
   }
 }

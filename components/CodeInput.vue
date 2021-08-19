@@ -6,7 +6,7 @@
 export default {
   props: {
     initialValue: {
-      type: String
+      type: [String, Number]
     }
   },
   data() {

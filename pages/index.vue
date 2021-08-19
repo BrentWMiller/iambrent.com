@@ -5,6 +5,8 @@
     <main class="my-20 space-y-64">
       <intro />
 
+      <tech />
+
       <stats />
 
       <tasks />

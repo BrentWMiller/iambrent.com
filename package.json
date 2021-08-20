@@ -6,8 +6,7 @@
     "debug": "nuxt --open --config-file ./config/nuxt.config.js",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "deploy": "npm run generate && push-dir --dir=dist --branch=gh-pages --cleanup"
+    "generate": "nuxt generate  --config-file ./config/nuxt.config.js"
   },
   "dependencies": {
     "core-js": "^3.15.1",

@@ -54,10 +54,10 @@ export default {
           svgLight: require('@/assets/icons/drupal-light.svg')
         },
         {
-          id: 'firebase',
-          label: 'Firebase',
-          svg: require('@/assets/icons/firebase.svg'),
-          svgLight: require('@/assets/icons/firebase-light.svg')
+          id: 'shopify',
+          label: 'Shopify',
+          svg: require('@/assets/icons/shopify.svg'),
+          svgLight: require('@/assets/icons/shopify-light.svg')
         },
         {
           id: 'tailwind',
@@ -66,10 +66,16 @@ export default {
           svgLight: require('@/assets/icons/tailwind-light.svg')
         },
         {
-          id: 'shopify',
-          label: 'Shopify',
-          svg: require('@/assets/icons/shopify.svg'),
-          svgLight: require('@/assets/icons/shopify-light.svg')
+          id: 'bootstrap',
+          label: 'Bootstrap',
+          svg: require('@/assets/icons/bootstrap.svg'),
+          svgLight: require('@/assets/icons/bootstrap-light.svg')
+        },
+        {
+          id: 'firebase',
+          label: 'Firebase',
+          svg: require('@/assets/icons/firebase.svg'),
+          svgLight: require('@/assets/icons/firebase-light.svg')
         },
         {
           id: 'vue',
@@ -88,12 +94,6 @@ export default {
           label: 'Angular',
           svg: require('@/assets/icons/angular.svg'),
           svgLight: require('@/assets/icons/angular-light.svg')
-        },
-        {
-          id: 'bootstrap',
-          label: 'Bootstrap',
-          svg: require('@/assets/icons/bootstrap.svg'),
-          svgLight: require('@/assets/icons/bootstrap-light.svg')
         },
         {
           id: 'git',

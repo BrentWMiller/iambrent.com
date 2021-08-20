@@ -35,87 +35,86 @@
 </template>
 
 <script>
+const TECH_ITEMS = [
+  {
+    id: 'wordpress',
+    label: 'WordPress',
+    svg: require('@/assets/icons/wordpress.svg'),
+    svgLight: require('@/assets/icons/wordpress-light.svg'),
+    type: 'cms'
+  },
+  {
+    id: 'drupal',
+    label: 'Drupal',
+    svg: require('@/assets/icons/drupal.svg'),
+    svgLight: require('@/assets/icons/drupal-light.svg'),
+    type: 'cms'
+  },
+  {
+    id: 'shopify',
+    label: 'Shopify',
+    svg: require('@/assets/icons/shopify.svg'),
+    svgLight: require('@/assets/icons/shopify-light.svg'),
+    type: 'cms'
+  },
+  {
+    id: 'tailwind',
+    label: 'Tailwind',
+    svg: require('@/assets/icons/tailwind.svg'),
+    svgLight: require('@/assets/icons/tailwind-light.svg'),
+    type: 'framework'
+  },
+  {
+    id: 'bootstrap',
+    label: 'Bootstrap',
+    svg: require('@/assets/icons/bootstrap.svg'),
+    svgLight: require('@/assets/icons/bootstrap-light.svg'),
+    type: 'framework'
+  },
+  {
+    id: 'firebase',
+    label: 'Firebase',
+    svg: require('@/assets/icons/firebase.svg'),
+    svgLight: require('@/assets/icons/firebase-light.svg'),
+    type: 'workflow'
+  },
+  {
+    id: 'vue',
+    label: 'Vue',
+    svg: require('@/assets/icons/vue.svg'),
+    svgLight: require('@/assets/icons/vue-light.svg'),
+    type: 'framework'
+  },
+  {
+    id: 'react',
+    label: 'React',
+    svg: require('@/assets/icons/react.svg'),
+    svgLight: require('@/assets/icons/react-light.svg'),
+    type: 'library'
+  },
+  {
+    id: 'angular',
+    label: 'Angular',
+    svg: require('@/assets/icons/angular.svg'),
+    svgLight: require('@/assets/icons/angular-light.svg'),
+    type: 'framework'
+  },
+  {
+    id: 'git',
+    label: 'Git',
+    svg: require('@/assets/icons/git.svg'),
+    svgLight: require('@/assets/icons/git-light.svg'),
+    type: 'workflow'
+  }
+];
+
 export default {
   data() {
     return {
       currentFilter: 'all',
-      techItems: [
-        {
-          id: 'wordpress',
-          label: 'WordPress',
-          svg: require('@/assets/icons/wordpress.svg'),
-          svgLight: require('@/assets/icons/wordpress-light.svg'),
-          type: 'cms'
-        },
-        {
-          id: 'drupal',
-          label: 'Drupal',
-          svg: require('@/assets/icons/drupal.svg'),
-          svgLight: require('@/assets/icons/drupal-light.svg'),
-          type: 'cms'
-        },
-        {
-          id: 'shopify',
-          label: 'Shopify',
-          svg: require('@/assets/icons/shopify.svg'),
-          svgLight: require('@/assets/icons/shopify-light.svg'),
-          type: 'cms'
-        },
-        {
-          id: 'tailwind',
-          label: 'Tailwind',
-          svg: require('@/assets/icons/tailwind.svg'),
-          svgLight: require('@/assets/icons/tailwind-light.svg'),
-          type: 'framework'
-        },
-        {
-          id: 'bootstrap',
-          label: 'Bootstrap',
-          svg: require('@/assets/icons/bootstrap.svg'),
-          svgLight: require('@/assets/icons/bootstrap-light.svg'),
-          type: 'framework'
-        },
-        {
-          id: 'firebase',
-          label: 'Firebase',
-          svg: require('@/assets/icons/firebase.svg'),
-          svgLight: require('@/assets/icons/firebase-light.svg'),
-          type: 'workflow'
-        },
-        {
-          id: 'vue',
-          label: 'Vue',
-          svg: require('@/assets/icons/vue.svg'),
-          svgLight: require('@/assets/icons/vue-light.svg'),
-          type: 'framework'
-        },
-        {
-          id: 'react',
-          label: 'React',
-          svg: require('@/assets/icons/react.svg'),
-          svgLight: require('@/assets/icons/react-light.svg'),
-          type: 'library'
-        },
-        {
-          id: 'angular',
-          label: 'Angular',
-          svg: require('@/assets/icons/angular.svg'),
-          svgLight: require('@/assets/icons/angular-light.svg'),
-          type: 'framework'
-        },
-        {
-          id: 'git',
-          label: 'Git',
-          svg: require('@/assets/icons/git.svg'),
-          svgLight: require('@/assets/icons/git-light.svg'),
-          type: 'workflow'
-        }
-      ],
-      techItemsFiltered: []
+      techItems: TECH_ITEMS,
+      techItemsFiltered: TECH_ITEMS
     }
-  },
-  mounted() {
-    this.techItemsFiltered = this.techItems;
   },
   methods: {
     filterTech(type) {

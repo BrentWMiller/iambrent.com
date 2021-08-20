@@ -1,11 +1,21 @@
 <template>
-  <section class="container space-y-4">
-    <p class="code-block">
+  <section
+    class="container space-y-4"
+  >
+    <p
+      class="code-block"
+      data-scroll
+      data-scroll-speed="-1"
+    >
       let buzzword = "<code-input :initial-value="buzzword" @update="setBuzzword"/>"<br />
       hello()
     </p>
 
-    <h1 class="max-w-4xl dark:text-white heading-1">
+    <h1
+      class="max-w-4xl dark:text-white heading-1"
+      data-scroll
+      data-scroll-speed="-2"
+    >
       Building <span class="text-lightula-green dark:text-darkula-green">{{ buzzword }}</span> websites and apps.
     </h1>
   </section>

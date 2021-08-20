@@ -5,16 +5,27 @@
     <div class="flex items-center space-x-12">
       <theme-switcher />
 
-      <button class="dark:text-white">
-        toggleMenu<span class="text-darkula-blue">()</span>
+      <button class="font-medium dark:text-white" @click="toggleMenu">
+        toggleMenu<span class="text-lightula-blue dark:text-darkula-blue">()</span>
       </button>
     </div>
+
+    <site-menu :visible="menuVisible" />
   </header>
 </template>
 
 <script>
-export default {
+import { mapState } from "vuex";
 
+export default {
+  computed: {
+    ...mapState('menu', ['menuVisible'])
+  },
+  methods: {
+    toggleMenu() {
+      this.$store.dispatch('menu/setMenuVisibility', !this.menuVisible);
+    }
+  }
 }
 </script>
 

@@ -1,25 +1,24 @@
 <template>
-  <div class="flex flex-col justify-between min-h-screen dark:bg-site">
-    <site-header />
+  <div id="app" class="dark">
+    <div class="relative flex flex-col justify-between min-h-screen overflow-hidden transition-colors duration-150 bg-site dark:bg-site-dark">
+      <site-header />
 
-    <main class="my-20 space-y-64">
-      <intro />
+      <main class="my-12 space-y-32 md:my-20 lg:space-y-64">
+        <intro />
 
-      <stats />
+        <tech />
 
-      <tasks />
+        <stats />
 
-      <social-and-contact />
-    </main>
+        <tasks />
 
-    <site-footer />
+        <social-and-contact />
+      </main>
+
+      <site-footer />
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-  beforeMount() {
-    document.body.classList.add('dark');
-  }
-}
 </script>

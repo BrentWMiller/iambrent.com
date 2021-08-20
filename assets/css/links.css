@@ -1,8 +1,8 @@
 .link {
   &:after {
     content: "=>";
-    @apply inline-block pl-3;
-    @apply text-darkula-pink;
+    @apply inline-block pl-6;
+    @apply text-lightula-pink dark:text-darkula-pink;
     @apply opacity-0;
   }
 

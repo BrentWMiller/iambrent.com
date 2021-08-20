@@ -1,14 +1,14 @@
 .code-button {
-  @apply text-gray-500;
+  @apply text-soft-white-700 dark:text-gray-500;
   @apply animate-pulse;
 
   &:hover {
-    @apply bg-gray-900;
+    @apply bg-soft-white-100 dark:bg-gray-900;
   }
 
   &:focus {
     outline: none;
     @apply animate-none;
-    @apply bg-gray-800;
+    @apply bg-soft-white-200 dark:bg-gray-800;
   }
 }

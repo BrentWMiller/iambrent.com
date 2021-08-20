@@ -1,14 +1,14 @@
 .code-input {
   @apply inline-block w-auto;
-  @apply text-gray-500;
+  @apply text-soft-white-700 dark:text-gray-500;
   @apply bg-transparent border-none;
 
   &:hover {
-    @apply bg-gray-900;
+    @apply bg-soft-white-100 dark:bg-gray-900;
   }
 
   &:focus {
     outline: none;
-    @apply bg-gray-800;
+    @apply bg-soft-white-200 dark:bg-gray-800;
   }
 }

@@ -1,19 +1,21 @@
 <template>
-  <div class="container space-y-8">
+  <div class="container relative space-y-8">
     <p class="code-block">
       // just some tasks i've helped tackle<br />
       const tasks =
     </p>
 
     <ul class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
-      <li v-for="task, index in sortedTasks" :key="index" class="text-2xl dark:text-white">
+      <li v-for="task, index in sortedTasks" :key="index" class="text-2xl font-medium dark:text-white">
         {{ task }}
       </li>
     </ul>
 
     <p class="code-block">
-      tasks.sort("<button @click="changeSort('length')" class="code-button">{{ currentSort }}</button>")
+      tasks.sort("<button @click="changeSort(currentSort)" class="code-button">{{ currentSort }}</button>")
     </p>
+
+    <p class="absolute right-0 text-4xl -bottom-10 text-lightula-pink dark:text-darkula-pink">===</p>
   </div>
 </template>
 
@@ -22,7 +24,6 @@ export default {
   data() {
     return {
       currentSort: 'random',
-      sortOptions: ['random', 'length'],
       tasks: [
         "built a powerful section-based theme template for drupal and wordpress",
         "converted a college’s entire course catalog into dynamic web pages via importing",
@@ -42,11 +43,13 @@ export default {
     changeSort(type) {
       switch (type) {
         case 'random':
-          this.tasks = this.shuffle(this.tasks);
+          this.tasks = this.tasks.sort((a,b) => a.length - b.length);
+          this.currentSort = 'length';
           break;
 
         case 'length':
-          this.tasks = this.tasks.sort((a,b) => a.length - b.length);
+          this.tasks = this.shuffle(this.tasks);
+          this.currentSort = 'random';
           break;
       
         default:

@@ -25,8 +25,10 @@ module.exports = {
           700: '#BABA98',
         },
 
-        site: '#F8F8F2',
-        "site-dark": '#0E0E0E',
+        'site': '#F8F8F2',
+        'site-dark': '#0E0E0E',
+        'accent': '#F5F4EF',
+        'accent-dark': '#0C0C0C',
 
         darkula: {
           green: '#4CE470',
@@ -47,6 +49,9 @@ module.exports = {
       fontFamily: {
         body: ['Fira Code'],
       },
+      zIndex: {
+        '-1': '-1'
+      }
     },
   }
 }

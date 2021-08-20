@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="dark">
+  <div id="app-container" class="dark">
     <div class="relative flex flex-col justify-between min-h-screen overflow-hidden transition-colors duration-150 bg-site dark:bg-site-dark">
       <site-header />
 

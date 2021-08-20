@@ -13,7 +13,7 @@ export default {
   },
   methods: {
     switchTheme() {
-      const app = document.getElementById('app');
+      const app = document.getElementById('app-container');
       this.themeColor = this.themeColor === 'dark' ? 'light' : 'dark';
 
       if (this.themeColor === 'dark') {

@@ -45,10 +45,15 @@ export default {
     '@/assets/css/inputs.css',
     '@/assets/css/links.css',
     '@/assets/css/buttons.css',
+    'locomotive-scroll/dist/locomotive-scroll.min.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    {
+      src: "~/plugins/locomotive-scroll.js",
+      mode: "client"
+    }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

@@ -12,7 +12,7 @@
     </ul>
 
     <p class="code-block">
-      tasks.sort("<button @click="changeSort('length')" class="code-button">{{ currentSort }}</button>")
+      tasks.sort("<button @click="changeSort(currentSort)" class="code-button">{{ currentSort }}</button>")
     </p>
 
     <p class="absolute right-0 text-4xl -bottom-10 text-lightula-pink dark:text-darkula-pink">===</p>
@@ -45,10 +45,12 @@ export default {
       switch (type) {
         case 'random':
           this.tasks = this.shuffle(this.tasks);
+          this.currentSort = 'length';
           break;
 
         case 'length':
           this.tasks = this.tasks.sort((a,b) => a.length - b.length);
+          this.currentSort = 'random';
           break;
       
         default:

@@ -11,7 +11,7 @@
 **/
 </pre>
 
-    <div class="relative flex-shrink-0 tech-grid">
+    <div class="relative z-10 flex-shrink-0 tech-grid">
 
       <div class="mb-8 lg:-ml-10 code-block">const frequentTech =</div>
       <div class="flex flex-wrap gap-4 mx-auto sm:grid sm:grid-cols-4 md:grid-cols-5">

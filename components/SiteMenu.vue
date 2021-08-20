@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute top-0 right-0 z-10">
+  <div class="absolute top-0 right-0 z-50">
     <button
       v-show="visible"
       @click="closeNav"

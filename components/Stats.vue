@@ -1,7 +1,7 @@
 <template>
-  <div class="container relative pt-36">
+  <div class="container relative pt-0 md:pt-36">
 
-<div class="absolute -left-10 -top-64 code-block">
+<div class="absolute -left-10 top-36 md:-top-64 code-block">
 const stats = [
 <template v-for="stat, index in stats"><pre :key="index">
   {
@@ -19,10 +19,10 @@ const stats = [
 }
 </pre>
 
-    <div class="max-w-screen-lg mx-auto">
+    <div class="relative z-10 max-w-screen-lg mx-auto">
       <p class="mb-8 ml-8 code-block">for stat in stats</p>
       
-      <ul class="grid grid-cols-3 gap-24">
+      <ul class="grid grid-cols-1 gap-12 lg:gap-24 lg:grid-cols-3">
         <li v-for="stat, index in stats" :key="index">
           <stat :stat="stat" />
         </li>

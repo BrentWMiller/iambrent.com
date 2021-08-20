@@ -4,18 +4,32 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'iambrent.com',
+    title: 'i am brent',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui' },
+      { hid: 'og:title', name: 'og:title', content: 'iambrent' },
+      { hid: 'og:site_name', name: 'og:site_name', content: 'iambrent' },
+      { hid: 'description', name: 'description', content: 'web developer building cool shit' },
+      { hid: 'og:description', name: 'og:description', content: 'web developer building cool shit' },
+      { hid: 'theme-color', name: 'theme-color', content: '#0e0e0e' },
+      { hid: 'apple-mobile-web-app-capable', name: 'apple-mobile-web-app-capable', content: 'yes' },
+      { hid: 'apple-mobile-web-app-status-bar-style', name: 'apple-mobile-web-app-status-bar-style', content: 'white' },
+      { hid: 'apple-mobile-web-app-title', name: 'apple-mobile-web-app-title', content: 'iambrent' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicons/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicons/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicons/favicon-16x16.png' },
+      { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/favicons/android-chrome-192x192.png' },
+      { rel: 'icon', type: 'image/png', sizes: '256x256', href: '/favicons/android-chrome-256x256.png' },
+      { rel: 'icon', type: 'image/png', sizes: '150x150', href: '/favicons/mstile-150x150.png' },
+      { rel: 'mask-icon', color: '#ffffff', href: '/favicons/safari-pinned-tab.svg' },
     ]
   },
 

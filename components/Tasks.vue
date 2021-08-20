@@ -24,7 +24,6 @@ export default {
   data() {
     return {
       currentSort: 'random',
-      sortOptions: ['random', 'length'],
       tasks: [
         "built a powerful section-based theme template for drupal and wordpress",
         "converted a college’s entire course catalog into dynamic web pages via importing",
@@ -44,12 +43,12 @@ export default {
     changeSort(type) {
       switch (type) {
         case 'random':
-          this.tasks = this.shuffle(this.tasks);
+          this.tasks = this.tasks.sort((a,b) => a.length - b.length);
           this.currentSort = 'length';
           break;
 
         case 'length':
-          this.tasks = this.tasks.sort((a,b) => a.length - b.length);
+          this.tasks = this.shuffle(this.tasks);
           this.currentSort = 'random';
           break;
       

@@ -5,7 +5,9 @@
     >
       <site-header />
 
-      <nuxt />
+      <main class="flex-grow">
+        <nuxt />
+      </main>
 
       <site-footer />
       

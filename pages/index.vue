@@ -1,5 +1,5 @@
 <template>
-  <main class="my-12 space-y-32 md:my-20 lg:space-y-64">
+  <div class="my-12 space-y-32 md:my-20 lg:space-y-64">
     <intro />
 
     <tech />
@@ -9,7 +9,7 @@
     <tasks />
 
     <social-and-contact />
-  </main>
+  </div>
 </template>
 
 <script>

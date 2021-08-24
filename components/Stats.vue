@@ -22,7 +22,7 @@ const stats = [
     <div class="relative z-10 max-w-screen-lg mx-auto">
       <p class="mb-8 ml-8 code-block">for stat in stats</p>
       
-      <ul class="grid grid-cols-1 gap-12 lg:gap-24 lg:grid-cols-3">
+      <ul class="flex flex-col items-center justify-center space-y-16 md:flex-row md:space-y-0 md:space-x-12 lg:space-x-24">
         <li v-for="stat, index in stats" :key="index">
           <stat :stat="stat" />
         </li>
@@ -40,17 +40,20 @@ export default {
         {
           value: 6,
           label: "Years of Experiece",
-          color: '!text-lightula-green dark:!text-darkula-green'
+          color: '!text-lightula-green dark:!text-darkula-green',
+          suffix: ''
         },
         {
           value: 50,
           label: "Websites",
-          color: '!text-lightula-yellow dark:!text-darkula-yellow'
+          color: '!text-lightula-yellow dark:!text-darkula-yellow',
+          suffix: '+'
         },
         {
           value: 5,
           label: "Web apps",
-          color: '!text-lightula-pink dark:!text-darkula-pink'
+          color: '!text-lightula-pink dark:!text-darkula-pink',
+          suffix: '+'
         },
       ]
     }

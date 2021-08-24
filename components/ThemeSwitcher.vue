@@ -1,6 +1,6 @@
 <template>
   <p class="code-block">
-    theme = THEMES.<button @click="switchTheme()" class="code-button">{{ themeColor }}</button>
+    theme = THEMES.<button @click="switchTheme()" class="code-button" type="button">{{ themeColor }}</button>
   </p>
 </template>
 

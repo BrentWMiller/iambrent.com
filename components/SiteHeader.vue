@@ -3,7 +3,7 @@
     <logo />
 
     <div class="flex items-center space-x-12">
-      <theme-switcher />
+      <theme-switcher class="hidden md:block" />
 
       <button class="font-medium dark:text-white" @click="toggleMenu">
         toggleMenu<span class="text-lightula-blue dark:text-darkula-blue">()</span>

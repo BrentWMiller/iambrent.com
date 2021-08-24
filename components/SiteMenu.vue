@@ -15,6 +15,20 @@
       <div class="flex-grow">
         <p class="mb-8 code-block">menuVisible = <button @click="closeNav" class="code-button">{{ visible }}</button></p>
         <p class="text-black dark:text-white">Thanks for checking out the site. It's still a work in progress, but I hope you enjoyed it.</p>
+
+        <div class="my-12 space-y-2">
+          <p class="code-block">const menu = [</p>
+          <nav class="ml-4">
+            <ul>
+              <li v-for="link, index in links" :key="index">
+                <nuxt-link :to="link.to" class="text-black dark:text-white link">
+                  {{ link.label }}<span v-if="index !== links.length - 1">,</span>
+                </nuxt-link>
+              </li>
+            </ul>
+          </nav>
+          <p class="code-block">]</p>
+        </div>
       </div>
 
       <theme-switcher class="block md:hidden" />
@@ -28,6 +42,20 @@ export default {
     visible: {
       type: Boolean,
       default: false
+    }
+  },
+  data() {
+    return {
+      links: [
+        {
+          label: 'Home',
+          to: '/'
+        },
+        {
+          label: 'Snippets',
+          to: '/snippets'
+        }
+      ]
     }
   },
   methods: {

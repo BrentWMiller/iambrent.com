@@ -1,6 +1,7 @@
 <template>
   <div class="absolute top-0 right-0 z-50">
     <button
+      type="button"
       v-show="visible"
       @click="closeNav"
       class="fixed top-0 left-0 w-screen h-screen transition-opacity duration-150 bg-white dark:bg-black"

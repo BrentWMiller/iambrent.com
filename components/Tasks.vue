@@ -12,7 +12,7 @@
     </ul>
 
     <p class="code-block">
-      tasks.sort("<button @click="changeSort(currentSort)" class="code-button">{{ currentSort }}</button>")
+      tasks.sort("<button @click="changeSort(currentSort)" class="code-button" type="button">{{ currentSort }}</button>")
     </p>
 
     <p class="absolute right-0 text-4xl -bottom-10 text-lightula-pink dark:text-darkula-pink">===</p>

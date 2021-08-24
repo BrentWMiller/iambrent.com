@@ -1,6 +1,6 @@
 <template>
   <footer class="container py-10 code-block">
-    <p>// Built using Figma, Vue, Nuxt, and Tailwind.</p>
+    <p>// Built using Figma, Vue, Nuxt, Tailwind, and Netlify.</p>
     <p>bye()</p>
   </footer>
 </template>

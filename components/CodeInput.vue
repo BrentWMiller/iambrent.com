@@ -1,5 +1,11 @@
 <template>
-  <input class="code-input focus:animate-none animate-pulse" v-model="inputValue" :size="inputSize()" spellcheck="false">
+  <input
+    v-model="inputValue"
+    class="code-input focus:animate-none animate-pulse"
+    :class="`${color}`"
+    :size="inputSize()"
+    spellcheck="false"
+  >
 </template>
 
 <script>
@@ -7,6 +13,9 @@ export default {
   props: {
     initialValue: {
       type: [String, Number]
+    },
+    color: {
+      type: String
     }
   },
   data() {

@@ -5,7 +5,7 @@
 const stats = [
 <template v-for="stat, index in stats"><pre :key="index">
   {
-    value: <code-input :initial-value="stat.value" @update="updateStat($event, index)" />,
+    value: <code-input :color="stat.color" :initial-value="stat.value" @update="updateStat($event, index)" />,
     label: {{ stat.label }}
   }<span v-if="index < stats.length - 1">,</span>
 </pre></template>
@@ -40,17 +40,17 @@ export default {
         {
           value: 6,
           label: "Years of Experiece",
-          color: 'text-lightula-green dark:text-darkula-green'
+          color: '!text-lightula-green dark:!text-darkula-green'
         },
         {
           value: 50,
           label: "Websites",
-          color: 'text-lightula-yellow dark:text-darkula-yellow'
+          color: '!text-lightula-yellow dark:!text-darkula-yellow'
         },
         {
           value: 5,
           label: "Web apps",
-          color: 'text-lightula-pink dark:text-darkula-pink'
+          color: '!text-lightula-pink dark:!text-darkula-pink'
         },
       ]
     }

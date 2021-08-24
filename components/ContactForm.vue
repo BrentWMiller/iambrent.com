@@ -1,19 +1,22 @@
 <template>
-  <form name="contact" netlify>
-    <p>
-      <label>Name <input type="text" name="name" /></label>
-    </p>
-    <p>
-      <label>Email <input type="email" name="email" /></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
+<form name="contact" netlify class="space-y-8 code-block">
+<pre>
+const <span class="text-lightula-green dark:text-darkula-green">form</span> = {
+  <label>email:   "<code-input type="email" placeholder="Enter your email" name="email" min-size="20" />"</label>
+  <label>message: "<code-input type="text" placeholder="Enter your message" name="message" min-size="20" />"</label>
+}
+</pre>
+
+<button type="submit" class="font-medium dark:text-white" @click="toggleMenu">
+  sendEmail<span class="text-lightula-blue dark:text-darkula-blue">(<span class="text-lightula-green dark:text-darkula-green">form</span>)</span>
+</button>
 </form>
 </template>
 
 <script>
+import CodeInput from './CodeInput.vue'
 export default {
+  components: { CodeInput },
 
 }
 </script>

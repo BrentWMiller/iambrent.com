@@ -9,7 +9,7 @@
       </ul>
     </div>
 
-    <contact-form />
+    <!-- <contact-form /> -->
 
   </div>
 </template>

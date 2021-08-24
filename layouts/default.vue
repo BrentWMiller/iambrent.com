@@ -28,10 +28,10 @@ export default {
     }
   },
   mounted() {
-    this.lms = new this.LocomotiveScroll({
-      el: document.querySelector("#app-container"),
-      smooth: true
-    });
+    // this.lms = new this.LocomotiveScroll({
+    //   el: document.querySelector("#app-container"),
+    //   smooth: true
+    // });
   },
   watch: {
     $route(to, from) {

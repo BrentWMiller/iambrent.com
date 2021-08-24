@@ -10,7 +10,7 @@
         </ul>
       </div>
 
-      <contact-form />
+      <contact-form class="md:pt-16"/>
 
     </div>
   </div>

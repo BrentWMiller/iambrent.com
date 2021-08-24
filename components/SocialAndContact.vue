@@ -9,6 +9,8 @@
       </ul>
     </div>
 
+    <contact-form />
+
   </div>
 </template>
 

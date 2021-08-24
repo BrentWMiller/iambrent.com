@@ -2,7 +2,7 @@
   <div class="container relative items-center lg:space-x-10 lg:flex">
     <h2 class="mb-10 lg:mb-0 lg:-mt-20 tech-title heading-2 dark:text-white">Using an ever-growing list of technology.</h2>
 
-<pre class="absolute -right-4 sm:right-0 top-16 sm:-top-10 lg:top-0 md:-right-20 code-block">
+<pre class="absolute hidden -right-4 sm:right-0 top-16 sm:-top-10 lg:top-0 md:-right-20 code-block sm:block">
 /**
  * cms
  * libraries
@@ -13,7 +13,7 @@
 
     <div class="relative z-10 flex-shrink-0 tech-grid">
       <div class="mb-8 lg:-ml-10 code-block">const frequentTech =</div>
-      <div class="flex flex-wrap gap-4 mx-auto sm:grid sm:grid-cols-4 md:grid-cols-5">
+      <div class="grid grid-cols-2 gap-4 mx-auto sm:grid-cols-4 md:grid-cols-5">
         <tech-item
           v-for="tech in techItemsFiltered"
           :key="tech.id"

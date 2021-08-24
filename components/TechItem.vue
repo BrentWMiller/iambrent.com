@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col items-center justify-center space-y-6 bg-soft-white-100 dark:bg-gray-900 tech-item rounded-2xl">
-    <div class="flex items-center h-20">
-      <img class="hidden dark:block" :src="tech.svg" />
-      <img class="block dark:hidden" :src="tech.svgLight" />
+  <div class="flex flex-col items-center justify-center space-y-6 bg-soft-white-100 dark:bg-gray-900 rounded-2xl w-full sm:w-[135px] h-[150px]">
+    <div class="flex items-center h-10 sm:h-20">
+      <img class="hidden image dark:block md:max-w-none max-w-[35px]" :src="tech.svg" />
+      <img class="block image dark:hidden" :src="tech.svgLight" />
     </div>
     <p class="text-base text-black dark:text-white">{{ tech.label }}</p>
   </div>
@@ -20,8 +20,4 @@ export default {
 </script>
 
 <style scoped>
-.tech-item {
-  width: 135px;
-  height: 150px;
-}
 </style>

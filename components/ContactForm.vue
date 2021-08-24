@@ -1,11 +1,9 @@
 <template>
 <form name="contact" netlify class="space-y-8 code-block">
-<pre>
-const <span class="text-lightula-green dark:text-darkula-green">form</span> = {
+<pre>const <span class="text-lightula-green dark:text-darkula-green">form</span> = {
   <label>email:   "<code-input type="email" placeholder="Enter your email" name="email" min-size="20" />"</label>
   <label>message: "<code-input type="text" placeholder="Enter your message" name="message" min-size="20" />"</label>
-}
-</pre>
+}</pre>
 
 <button type="submit" class="font-medium dark:text-white" @click="toggleMenu">
   sendEmail<span class="text-lightula-blue dark:text-darkula-blue">(<span class="text-lightula-green dark:text-darkula-green">form</span>)</span>

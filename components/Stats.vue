@@ -1,7 +1,7 @@
 <template>
   <div class="container relative pt-0 md:pt-36">
 
-<div class="absolute -left-10 top-36 md:-top-64 code-block">
+<div class="absolute -left-20 top-36 md:-top-64 code-block">
 const stats = [
 <template v-for="stat, index in stats"><pre :key="index">
   {
@@ -12,7 +12,7 @@ const stats = [
 ]
 </div>
 
-<pre class="absolute top-0 right-0 code-block">
+<pre class="absolute top-0 -right-12 sm:right-0 code-block">
 {
   value: number,
   label: string

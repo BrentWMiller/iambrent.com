@@ -5,6 +5,8 @@
     :class="`${color}`"
     :size="inputSize()"
     spellcheck="false"
+    :type="type"
+    :name="name"
   >
 </template>
 
@@ -16,6 +18,17 @@ export default {
     },
     color: {
       type: String
+    },
+    type: {
+      type: String,
+      default: 'text'
+    },
+    name: {
+      type: String,
+    },
+    minSize: {
+      type: [String, Number],
+      default: 1
     }
   },
   data() {
@@ -31,6 +44,10 @@ export default {
   methods: {
     inputSize() {
       let size = this.inputValue.length - 4;
+
+      if (size < this.minSize) {
+        size = this.minSize;
+      }
 
       return size > 0 ? size : 1;
     }

@@ -1,5 +1,5 @@
 <template>
-  <div class="container max-w-screen-lg">
+  <div class="container grid max-w-screen-lg grid-cols-2 gap-4">
 
     <div class="space-y-4">
       <p class="code-block">// check out my code</p>
@@ -9,7 +9,7 @@
       </ul>
     </div>
 
-    <!-- <contact-form /> -->
+    <contact-form />
 
   </div>
 </template>

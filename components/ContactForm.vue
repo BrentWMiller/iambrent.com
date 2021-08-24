@@ -6,7 +6,7 @@
   <label>message: "<code-input type="text" placeholder="Enter your message" name="message" min-size="20" />"</label>
 }</pre>
 
-<button type="submit" class="font-medium dark:text-white">
+<button type="submit" class="font-medium text-black dark:text-white">
   sendEmail<span class="text-lightula-blue dark:text-darkula-blue">(<span class="text-lightula-green dark:text-darkula-green">form</span>)</span>
 </button>
 </form>

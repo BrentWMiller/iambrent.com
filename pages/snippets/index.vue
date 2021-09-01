@@ -23,8 +23,8 @@ export default {
       snippets: [
         {
           title: "Find & Replace All ACF Timestamps",
-          code: '(?<="modified": ).*$',
-          tags: '// regex'
+          code: "(?<=\"modified\": ).*$",
+          tags: "// regex"
         }
       ]
     }

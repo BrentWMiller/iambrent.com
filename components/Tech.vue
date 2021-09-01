@@ -13,7 +13,7 @@
 
     <div class="relative z-10 flex-shrink-0 tech-grid">
       <div class="mb-8 lg:-ml-10 code-block">const frequentTech =</div>
-      <div class="grid grid-cols-2 gap-4 mx-auto sm:grid-cols-4 md:grid-cols-5">
+      <div v-if="techItemsFiltered" class="grid grid-cols-2 gap-4 mx-auto sm:grid-cols-4 md:grid-cols-5">
         <tech-item
           v-for="tech in techItemsFiltered"
           :key="tech.id"

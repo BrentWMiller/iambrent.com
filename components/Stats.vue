@@ -22,7 +22,7 @@ const stats = [
     <div class="relative z-10 max-w-screen-lg mx-auto">
       <p class="mb-8 ml-8 code-block">for stat in stats</p>
       
-      <ul class="flex flex-col items-center justify-center space-y-16 md:flex-row md:space-y-0 md:space-x-12 lg:space-x-24">
+      <ul v-if="stats" class="flex flex-col items-center justify-center space-y-16 md:flex-row md:space-y-0 md:space-x-12 lg:space-x-24">
         <li v-for="stat, index in stats" :key="index">
           <stat :stat="stat" />
         </li>

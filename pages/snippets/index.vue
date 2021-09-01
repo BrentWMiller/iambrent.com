@@ -22,9 +22,9 @@ export default {
     return {
       snippets: [
         {
-          title: "Find & Replace All ACF Timestamps",
+          title: "Find & replace all ACF timestamps in VS Code using regex.",
           code: "(?<=\"modified\": ).*$",
-          tags: "// regex"
+          tags: "// regex, vs code"
         }
       ]
     }

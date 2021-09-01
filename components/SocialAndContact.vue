@@ -10,7 +10,9 @@
         </ul>
       </div>
 
-      <!-- <contact-form class="md:pt-16"/> -->
+      <client-only placeholder="Loading...">
+        <contact-form class="md:pt-16"/>
+      </client-only>
 
     </div>
   </div>

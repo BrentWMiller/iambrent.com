@@ -4,8 +4,8 @@
       <h1 class="heading-2">Snippets</h1>
       <p class="code-block">// Helpful code snippets for things I'm always forgetting.</p>
     </div>
-
-    <ul class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+    
+    <ul v-if="snippets" class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       <li class="space-y-3" v-for="snippet, index, in snippets" :key="index">
         <h2 class="text-lg font-medium">{{ snippet.title }}</h2>
         <pre class="p-4 bg-soft-white-100 dark:bg-gray-900">{{ snippet.code }}</pre>

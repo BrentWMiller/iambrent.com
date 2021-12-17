@@ -1,7 +1,7 @@
 <template>
-  <nuxt-link to="/">
+  <nuxt-link to="/" class="group">
     <p class="text-2xl font-bold dark:text-white">
-      <span class="text-lightula-blue dark:text-darkula-blue">_</span>brent
+      <span class="text-lightula-blue dark:text-darkula-blue group-hover:animate-pulse">_</span>brent
     </p>
   </nuxt-link>
 </template>

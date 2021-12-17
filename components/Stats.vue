@@ -14,8 +14,8 @@ const stats = [
 
 <pre class="absolute top-0 -right-12 sm:right-0 code-block">
 {
-  value: number,
-  label: string
+  value: Number,
+  label: String
 }
 </pre>
 
@@ -38,7 +38,7 @@ export default {
     return {
       stats: [
         {
-          value: 6,
+          value: new Date().getFullYear() - 2015,
           label: "Years of Experiece",
           color: 'text-lightula-green dark:text-darkula-green',
           suffix: ''

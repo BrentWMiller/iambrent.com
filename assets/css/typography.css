@@ -4,8 +4,12 @@
 }
 
 .heading-2 {
-  @apply text-2xl font-normal leading-tight;
+  @apply text-2xl font-normal;
   @apply xl:text-4xl;
+
+  @media (min-width: 1280px) {
+    line-height: 3rem;
+  }
 }
 
 .code-block {

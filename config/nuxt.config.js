@@ -14,7 +14,7 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui' },
+      { hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, minimal-ui' },
       { hid: 'og:title', name: 'og:title', content: 'iambrent' },
       { hid: 'og:site_name', name: 'og:site_name', content: 'iambrent' },
       { hid: 'description', name: 'description', content: 'web developer building cool shit' },

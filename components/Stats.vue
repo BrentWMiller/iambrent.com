@@ -40,19 +40,19 @@ export default {
         {
           value: 6,
           label: "Years of Experiece",
-          color: '!text-lightula-green dark:!text-darkula-green',
+          color: 'text-lightula-green dark:text-darkula-green',
           suffix: ''
         },
         {
           value: 50,
           label: "Websites",
-          color: '!text-lightula-yellow dark:!text-darkula-yellow',
+          color: 'text-lightula-yellow dark:text-darkula-yellow',
           suffix: '+'
         },
         {
           value: 5,
           label: "Web apps",
-          color: '!text-lightula-pink dark:!text-darkula-pink',
+          color: 'text-lightula-pink dark:text-darkula-pink',
           suffix: '+'
         },
       ]

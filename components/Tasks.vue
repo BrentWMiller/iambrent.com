@@ -1,7 +1,7 @@
 <template>
   <div class="container relative space-y-8">
     <p class="code-block">
-      // just some tasks i've helped tackle<br />
+      // some tasks i've helped take on and launch<br />
       const tasks =
     </p>
 
@@ -25,12 +25,12 @@ export default {
     return {
       currentSort: 'random',
       tasks: [
-        "built a powerful section-based theme template for drupal and wordpress",
-        "converted a college’s entire course catalog into dynamic web pages via importing",
-        "built a fully custom e-commerce solution for a hardware store",
-        "built a custom order management system",
-        "built dozens of fully custom themes for drupal and wordpress",
-        "redesigned and built a nationwide hospital equipment service system",
+        "built a powerful section-based starter theme template for drupal and wordpress",
+        "converted a university's entire course catalog into dynamic web pages during daily import",
+        "designed and developed a bespoke e-commerce solution for a hardware store",
+        "developed a custom white-label order management system",
+        "developed dozens of fully custom themes for Drupal and Wordpress",
+        "redesigned and built a nationwide hospital's equipment service system",
       ],
     }
   },

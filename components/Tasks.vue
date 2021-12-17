@@ -31,7 +31,7 @@ export default {
     return {
       currentSort: 'random',
       tasks: [
-        "Built a powerful section-based starter theme template for drupal and wordpress",
+        "Built a powerful section-based starter theme template for Drupal and Wordpress",
         "Converted a university's entire course catalog into dynamic web pages during daily import",
         "Designed and developed a bespoke e-commerce solution for a hardware store",
         "Developed a custom white-label order management system",

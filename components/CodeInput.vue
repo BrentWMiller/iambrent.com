@@ -43,13 +43,13 @@ export default {
   },
   methods: {
     inputSize() {
-      let size = this.inputValue.length - 4;
+      let size = this.inputValue.length ;
 
       if (size < this.minSize) {
         size = this.minSize;
       }
 
-      return size > 0 ? size : 1;
+      return size > 0 ? size : 2;
     }
   }
 }

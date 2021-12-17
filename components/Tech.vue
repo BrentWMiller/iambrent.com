@@ -27,7 +27,7 @@
         </p>
 
         <p class="code-block">
-          frequentTech.filter("<button @click="filterTech(currentFilter)" class="button-code" type="button">{{ currentFilter }}</button>")
+          frequentTech.filter("<button @click="filterTech(currentFilter)" class="button button-code" type="button">{{ currentFilter }}</button>")
         </p>
       </div>
     </div>

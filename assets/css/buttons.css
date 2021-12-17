@@ -1,3 +1,15 @@
+.button {
+  &:hover {
+    @apply bg-soft-white-100 dark:bg-gray-900;
+  }
+
+  &:focus {
+    outline: none;
+    @apply animate-none;
+    @apply bg-soft-white-200 dark:bg-gray-800;
+  }
+}
+
 .button-code {
   @apply text-soft-white-700 dark:text-gray-500;
   @apply animate-pulse;
@@ -11,4 +23,8 @@
     @apply animate-none;
     @apply bg-soft-white-200 dark:bg-gray-800;
   }
+}
+
+.button-function {
+  @apply font-medium text-black dark:text-white;
 }

@@ -68,6 +68,17 @@ export default {
       ]
     }
   },
+  mounted() {
+    // check if key is escape
+    document.addEventListener('keydown', e => {
+      if (e.keyCode === 27) {
+        this.closeNav()
+      }
+    })
+  },
+  unmounted() {
+    document.removeEventListener('keydown', this.closeNav);
+  },
   methods: {
     closeNav() {
       this.$store.dispatch('menu/setMenuVisibility', false);

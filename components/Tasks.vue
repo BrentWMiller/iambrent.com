@@ -1,13 +1,19 @@
 <template>
   <div class="container relative space-y-8">
     <p class="code-block">
-      // some tasks i've helped take on and launch<br />
+      // tasks i've helped undertake and launch<br />
+      
+    </p>
+    <p class="code-block">
       const tasks =
     </p>
 
     <ul v-if="sortedTasks" class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
       <li v-for="task, index in sortedTasks" :key="index" class="text-2xl font-medium dark:text-white">
-        {{ task }}
+        <p>{{ task }}</p>
+      </li>
+      <li class="text-2xl text-soft-white-500 dark:text-gray-700">
+        <a href="#contact" class="button button-code">Let's build something awesome together</a>
       </li>
     </ul>
 
@@ -25,12 +31,14 @@ export default {
     return {
       currentSort: 'random',
       tasks: [
-        "built a powerful section-based starter theme template for drupal and wordpress",
-        "converted a university's entire course catalog into dynamic web pages during daily import",
-        "designed and developed a bespoke e-commerce solution for a hardware store",
-        "developed a custom white-label order management system",
-        "developed dozens of fully custom themes for Drupal and Wordpress",
-        "redesigned and built a nationwide hospital's equipment service system",
+        "Built a powerful section-based starter theme template for drupal and wordpress",
+        "Converted a university's entire course catalog into dynamic web pages during daily import",
+        "Designed and developed a bespoke e-commerce solution for a hardware store",
+        "Developed a custom white-label order management system",
+        "Redesigned and built a nationwide hospital's equipment service system",
+        "Developed dozens of fully custom themes for Drupal and Wordpress",
+        "Designed and developed a custom integration to connect time-tracking with a payroll system",
+        "Created several custom modules for Drupal and Wordpress",
       ],
     }
   },

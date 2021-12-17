@@ -1,4 +1,5 @@
 <template>
+<div id="contact">
 <form name="contact" netlify class="space-y-8 code-block">
 <p class="code-block">// get in touch</p>
 <pre>const <span class="text-lightula-green dark:text-darkula-green">form</span> = {
@@ -10,6 +11,7 @@
   sendEmail<span class="text-lightula-blue dark:text-darkula-blue">(<span class="text-lightula-green dark:text-darkula-green">form</span>)</span>
 </button>
 </form>
+</div>
 </template>
 
 <script>

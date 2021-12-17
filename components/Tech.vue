@@ -41,70 +41,90 @@ const TECH_ITEMS = [
     label: 'WordPress',
     svg: require('@/assets/icons/wordpress.svg'),
     svgLight: require('@/assets/icons/wordpress-light.svg'),
-    type: 'cms'
+    type: 'cms',
+    width: '61',
+    height: '61',
   },
   {
     id: 'drupal',
     label: 'Drupal',
     svg: require('@/assets/icons/drupal.svg'),
     svgLight: require('@/assets/icons/drupal-light.svg'),
-    type: 'cms'
+    type: 'cms',
+    width: '50',
+    height: '67',
   },
   {
     id: 'shopify',
     label: 'Shopify',
     svg: require('@/assets/icons/shopify.svg'),
     svgLight: require('@/assets/icons/shopify-light.svg'),
-    type: 'cms'
+    type: 'cms',
+    width: '61',
+    height: '69',
   },
   {
     id: 'tailwind',
     label: 'Tailwind',
     svg: require('@/assets/icons/tailwind.svg'),
     svgLight: require('@/assets/icons/tailwind-light.svg'),
-    type: 'framework'
+    type: 'framework',
+    width: '53',
+    height: '31',
   },
   {
     id: 'bootstrap',
     label: 'Bootstrap',
     svg: require('@/assets/icons/bootstrap.svg'),
     svgLight: require('@/assets/icons/bootstrap-light.svg'),
-    type: 'framework'
+    type: 'framework',
+    width: '61',
+    height: '49',
   },
   {
     id: 'firebase',
     label: 'Firebase',
     svg: require('@/assets/icons/firebase.svg'),
     svgLight: require('@/assets/icons/firebase-light.svg'),
-    type: 'workflow'
+    type: 'workflow',
+    width: '51',
+    height: '69',
   },
   {
     id: 'vue',
     label: 'Vue',
     svg: require('@/assets/icons/vue.svg'),
     svgLight: require('@/assets/icons/vue-light.svg'),
-    type: 'framework'
+    type: 'framework',
+    width: '65',
+    height: '57',
   },
   {
     id: 'react',
     label: 'React',
     svg: require('@/assets/icons/react.svg'),
     svgLight: require('@/assets/icons/react-light.svg'),
-    type: 'library'
+    type: 'library',
+    width: '65',
+    height: '59',
   },
   {
     id: 'angular',
     label: 'Angular',
     svg: require('@/assets/icons/angular.svg'),
     svgLight: require('@/assets/icons/angular-light.svg'),
-    type: 'framework'
+    type: 'framework',
+    width: '61',
+    height: '65',
   },
   {
     id: 'git',
     label: 'Git',
     svg: require('@/assets/icons/git.svg'),
     svgLight: require('@/assets/icons/git-light.svg'),
-    type: 'workflow'
+    type: 'workflow',
+    width: '61',
+    height: '61',
   }
 ];
 

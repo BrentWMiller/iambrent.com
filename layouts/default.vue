@@ -10,11 +10,6 @@
       </main>
 
       <site-footer />
-      
-      <div class="transition-colors duration-150 dark:opacity-75 -z-1 dark:text-accent-dark text-accent">
-        <background-accent class="absolute top-0 left-0"/>
-        <background-accent class="absolute bottom-0 right-0"/>
-      </div>
     </div>
 
   </div>

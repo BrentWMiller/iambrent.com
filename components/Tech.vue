@@ -13,11 +13,12 @@
 
     <div class="relative z-10 flex-shrink-0 tech-grid">
       <div class="mb-8 lg:-ml-10 code-block">const frequentTech =</div>
-      <div v-if="techItemsFiltered" class="grid grid-cols-2 gap-4 mx-auto sm:grid-cols-4 md:grid-cols-5">
+      <div v-if="techItems && techItems.length > 0" class="grid grid-cols-2 gap-4 mx-auto sm:grid-cols-4 md:grid-cols-5">
         <tech-item
-          v-for="tech in techItemsFiltered"
+          v-for="tech in techItems"
           :key="tech.id"
           :tech="tech"
+          :visible="currentFilter === 'all' ? true : tech.type === currentFilter"
         />
       </div>
 
@@ -133,25 +134,16 @@ export default {
     return {
       currentFilter: 'all',
       techItems: TECH_ITEMS,
-      techItemsFiltered: TECH_ITEMS
+      techItemsFiltered: TECH_ITEMS,
+      filterTypes: ['all', 'cms', 'library', 'framework', 'workflow'],
     }
   },
   methods: {
     filterTech(type) {
-      switch (type) {
-        case 'all':
-          this.techItemsFiltered = this.techItems.filter(tech => tech.type === 'cms')
-          this.currentFilter = 'cms';
-          break;
+      const nextFilter = this.filterTypes[this.filterTypes.indexOf(type) + 1];
+      this.currentFilter = nextFilter ? nextFilter : 'all';
 
-        case 'cms':
-          this.techItemsFiltered = this.techItems;
-          this.currentFilter = 'all';
-          break;
-      
-        default:
-          break;
-      }
+      this.techItemsFiltered = this.currentFilter === 'all' ? this.techItems : this.techItems.filter(tech => tech.type === this.currentFilter);
     }
   }
 }

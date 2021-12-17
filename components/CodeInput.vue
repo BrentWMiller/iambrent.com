@@ -1,13 +1,18 @@
 <template>
-  <input
-    v-model="inputValue"
-    class="code-input focus:animate-none animate-pulse"
-    :class="`${color}`"
-    :size="inputSize()"
-    spellcheck="false"
-    :type="type"
-    :name="name"
-  >
+  <div class="inline-block w-auto code-input">
+    <label :for="`code-input-${_uid}`" class="sr-only"></label>
+    <input
+      v-model="inputValue"
+      class="code-input-field focus:animate-none animate-pulse"
+      :class="`${color}`"
+      :size="inputSize()"
+      spellcheck="false"
+      :placeholder="placeholder"
+      :type="type"
+      :name="name"
+      :id="`code-input-${_uid}`"
+    >
+  </div>
 </template>
 
 <script>
@@ -29,6 +34,10 @@ export default {
     minSize: {
       type: [String, Number],
       default: 1
+    },
+    placeholder: {
+      type: String,
+      default: ''
     }
   },
   data() {

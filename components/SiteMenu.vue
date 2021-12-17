@@ -13,7 +13,7 @@
       :class="`${visible ? 'translate-x-1 pointer-events-auto' : 'translate-x-full pointer-events-auto'}`"
     >
       <div class="flex-grow">
-        <p class="mb-8 code-block">menuVisible = <button @click="closeNav" class="code-button">{{ visible }}</button></p>
+        <p class="mb-8 code-block">menuVisible = <button @click="closeNav" class="button-code">{{ visible }}</button></p>
         <p class="text-black dark:text-white">Thanks for checking out the site. It's still a work in progress, but I hope you enjoyed it.</p>
 
         <div class="my-12 space-y-2">

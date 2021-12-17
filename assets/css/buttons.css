@@ -1,4 +1,4 @@
-.code-button {
+.button-code {
   @apply text-soft-white-700 dark:text-gray-500;
   @apply animate-pulse;
 

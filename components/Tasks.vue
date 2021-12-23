@@ -1,7 +1,7 @@
 <template>
   <div class="container relative space-y-8">
     <p class="code-block">
-      // tasks i've helped undertake and launch<br />
+      // Tasks I've helped undertake and launch<br />
       
     </p>
     <p class="code-block">

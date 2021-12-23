@@ -23,9 +23,9 @@
         <div class="my-12 space-y-2">
           <p class="code-block">const menu = [</p>
           <nav class="ml-4">
-            <ul>
+            <ul class="space-y-2">
               <li v-for="link, index in links" :key="index">
-                <nuxt-link :to="link.to" class="text-black dark:text-white link">
+                <nuxt-link :to="link.to" class="text-xl text-black dark:text-white link">
                   {{ link.label }}<span v-if="index !== links.length - 1">,</span>
                 </nuxt-link>
               </li>
@@ -64,6 +64,10 @@ export default {
         {
           label: 'Snippets',
           to: '/snippets'
+        },
+        {
+          label: 'Tools',
+          to: '/tools'
         }
       ]
     }

@@ -25,6 +25,11 @@ export default {
           title: "Find & replace all ACF timestamps in VS Code using regex.",
           code: "(?<=\"modified\": ).*$",
           tags: "// regex, vs code"
+        },
+        {
+          title: "Remove cached items from .gitignore",
+          code: "git rm -r --cached ."
+          tags: "git"
         }
       ]
     }

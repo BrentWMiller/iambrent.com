@@ -32,9 +32,14 @@ export default {
           tags: "// git"
         },
         {
-          title: "Remove composer memory limit",
+          title: "Remove Composer memory limit",
           code: "COMPOSER_MEMORY_LIMIT=-1"
           tags: "// composer, drupal"
+        },
+        {
+          title: "Self-update Composer to any version",
+          code: "composer self-update --{version_#}",
+          tags: "// composer, drupal
         }
       ]
     }

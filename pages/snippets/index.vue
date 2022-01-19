@@ -29,7 +29,12 @@ export default {
         {
           title: "Remove cached items from .gitignore",
           code: "git rm -r --cached ."
-          tags: "git"
+          tags: "// git"
+        },
+        {
+          title: "Remove composer memory limit",
+          code: "COMPOSER_MEMORY_LIMIT=-1"
+          tags: "// composer, drupal"
         }
       ]
     }

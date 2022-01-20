@@ -40,6 +40,11 @@ export default {
           title: "Self-update Composer to any version",
           code: "composer self-update --{version_#}",
           tags: "// composer, drupal
+        },
+        {
+          title: "Run terminal in Rosetta 2",
+          code: "arch -x86_64 zsh",
+          tags: "// terminal"
         }
       ]
     }

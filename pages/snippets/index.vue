@@ -25,6 +25,26 @@ export default {
           title: "Find & replace all ACF timestamps in VS Code using regex.",
           code: "(?<=\"modified\": ).*$",
           tags: "// regex, vs code"
+        },
+        {
+          title: "Remove cached items from .gitignore",
+          code: "git rm -r --cached ."
+          tags: "// git"
+        },
+        {
+          title: "Remove Composer memory limit",
+          code: "COMPOSER_MEMORY_LIMIT=-1"
+          tags: "// composer, drupal"
+        },
+        {
+          title: "Self-update Composer to any version",
+          code: "composer self-update --{version_#}",
+          tags: "// composer, drupal
+        },
+        {
+          title: "Run terminal in Rosetta 2",
+          code: "arch -x86_64 zsh",
+          tags: "// terminal"
         }
       ]
     }

@@ -11,6 +11,7 @@
       :type="type"
       :name="name"
       :id="`code-input-${_uid}`"
+      @keyup="handleKeyUp"
     >
   </div>
 </template>
@@ -59,6 +60,9 @@ export default {
       }
 
       return size > 0 ? size : 2;
+    },
+    handleKeyUp($event) {
+      this.$emit('keyup', $event);
     }
   }
 }

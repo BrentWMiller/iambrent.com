@@ -65,10 +65,10 @@ export default {
           label: 'Snippets',
           to: '/snippets'
         },
-        {
-          label: 'Tools',
-          to: '/tools'
-        }
+        // {
+        //   label: 'Tools',
+        //   to: '/tools'
+        // }
       ]
     }
   },

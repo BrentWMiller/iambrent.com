@@ -40,7 +40,7 @@ export default {
       stats: [
         {
           value: new Date().getFullYear() - 2015,
-          label: "Years of Experiece",
+          label: "Years of Experience",
           color: 'text-lightula-green dark:text-darkula-green',
           suffix: ''
         },

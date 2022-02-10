@@ -53,6 +53,11 @@ export default {
           title: "Run terminal in Rosetta 2",
           code: "arch -x86_64 zsh",
           tags: ['terminal']
+        },
+        {
+          title: "Delete config files via drush",
+          code: "drush config-delete module_name.settings",
+          tags: ['drupal', 'drush']
         }
       ]
     }

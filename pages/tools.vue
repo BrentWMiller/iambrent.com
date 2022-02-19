@@ -11,7 +11,7 @@
 
       <ul>
         <li v-for="app, index in apps" :key="index">
-          <a :href="app.url" target="_blank" rel="noopener" title="View website">{{ app.name }}</a>
+          <a :href="`${app.url}?ref=iambrent.com`" target="_blank" rel="noopener" title="View website">{{ app.name }}</a>
         </li>
       </ul>
     </div>
@@ -27,11 +27,15 @@ export default {
       apps: {
         vs_code: {
           name: 'VS Code',
-          url: 'https://code.visualstudio.com?ref=iambrent',
+          url: 'https://code.visualstudio.com',
         },
         craft: {
           name: 'Craft',
-          url: 'https://www.craft.do?ref=iambrent',
+          url: 'https://www.craft.do',
+        },
+        figma: {
+          name: 'Figma',
+          url: 'https://www.figma.com/',
         }
       }
     }

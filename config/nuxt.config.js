@@ -14,7 +14,7 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, minimal-ui' },
+      { hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=5, minimal-ui' },
       { hid: 'og:title', name: 'og:title', content: 'iambrent' },
       { hid: 'og:site_name', name: 'og:site_name', content: 'iambrent' },
       { hid: 'description', name: 'description', content: 'web developer building cool shit' },
@@ -44,16 +44,11 @@ export default {
     '@/assets/css/scaffolding.css',
     '@/assets/css/inputs.css',
     '@/assets/css/links.css',
-    '@/assets/css/buttons.css',
-    'locomotive-scroll/dist/locomotive-scroll.min.css'
+    '@/assets/css/buttons.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    {
-      src: "~/plugins/locomotive-scroll.js",
-      mode: "client"
-    }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

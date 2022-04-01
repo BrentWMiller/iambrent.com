@@ -22,12 +22,6 @@ export default {
       lms: null
     }
   },
-  mounted() {
-    // this.lms = new this.LocomotiveScroll({
-    //   el: document.querySelector("#app-container"),
-    //   smooth: true
-    // });
-  },
   watch: {
     $route(to, from) {
       this.$store.dispatch('menu/setMenuVisibility', false);

@@ -8,7 +8,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'i am brent',
+    title: 'I am Brent',
     htmlAttrs: {
       lang: 'en'
     },
@@ -17,8 +17,8 @@ export default {
       { hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=5, minimal-ui' },
       { hid: 'og:title', name: 'og:title', content: 'iambrent' },
       { hid: 'og:site_name', name: 'og:site_name', content: 'iambrent' },
-      { hid: 'description', name: 'description', content: 'web developer building cool shit' },
-      { hid: 'og:description', name: 'og:description', content: 'web developer building cool shit' },
+      { hid: 'description', name: 'description', content: 'I build stuff using web technology.' },
+      { hid: 'og:description', name: 'og:description', content: 'I build stuff using web technology.' },
       { hid: 'theme-color', name: 'theme-color', content: '#0e0e0e' },
       { hid: 'apple-mobile-web-app-capable', name: 'apple-mobile-web-app-capable', content: 'yes' },
       { hid: 'apple-mobile-web-app-status-bar-style', name: 'apple-mobile-web-app-status-bar-style', content: 'white' },

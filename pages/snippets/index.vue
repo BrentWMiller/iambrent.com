@@ -25,6 +25,18 @@
 <script>
 export default {
   name: 'Snippets',
+  head() {
+    return {
+      title: 'I am Brent | Snippets',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Helpful code snippets for things I\'m always forgetting.'
+        }
+      ]
+    }
+  },
   data() {
     return {
       snippetQuery: '',

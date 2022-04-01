@@ -14,5 +14,17 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: 'I am Brent',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Building kick ass websites and apps. Using an ever-growing stack of technologies.'
+        }
+      ]
+    }
+  }
 }
 </script>

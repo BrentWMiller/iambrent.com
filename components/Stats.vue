@@ -3,11 +3,11 @@
 
     <h2 class="max-w-lg mx-auto text-center mb-14 heading-2 dark:text-white">With the experience to back it up.</h2>
 
-<div class="absolute -left-20 top-36 md:-top-64 code-block" aria-hidden="true">
+<div class="absolute -left-20 top-36 md:-top-64 code-block">
 const stats = [
 <template v-for="stat, index in stats"><pre :key="index">
   {
-    value: <code-input :color="stat.color" :initial-value="stat.value" @update="updateStat($event, index)" />,
+    value: <code-input :color="stat.color" :initial-value="stat.value" :name="stat.label" @update="updateStat($event, index)" />,
     label: {{ stat.label }}
   }<span v-if="index < stats.length - 1">,</span>
 </pre></template>

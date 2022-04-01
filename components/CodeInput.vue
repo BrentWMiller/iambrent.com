@@ -1,6 +1,6 @@
 <template>
   <div class="inline-block w-auto code-input">
-    <label :for="`code-input-${_uid}`" class="sr-only"></label>
+    <label :for="`code-input-${_uid}`" class="sr-only">{{ name }}</label>
     <input
       v-model="inputValue"
       class="code-input-field focus:animate-none animate-pulse"

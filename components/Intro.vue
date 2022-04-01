@@ -4,7 +4,7 @@
   >
     <p class="code-block">
       hello()<br />
-      let buzzword = "<code-input :initial-value="buzzword" @update="setBuzzword"/>"<br />
+      let buzzword = "<code-input name="buzzword" :initial-value="buzzword" @update="setBuzzword"/>"<br />
     </p>
 
     <h1 class="max-w-4xl dark:text-white heading-1">

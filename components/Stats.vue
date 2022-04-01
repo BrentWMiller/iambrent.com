@@ -3,7 +3,7 @@
 
     <h2 class="max-w-lg mx-auto text-center mb-14 heading-2 dark:text-white">With the experience to back it up.</h2>
 
-<div class="absolute -left-20 top-36 md:-top-64 code-block">
+<div class="absolute -left-20 top-36 md:-top-64 code-block" aria-hidden="true">
 const stats = [
 <template v-for="stat, index in stats"><pre :key="index">
   {
@@ -14,7 +14,7 @@ const stats = [
 ]
 </div>
 
-<pre class="absolute top-0 -right-12 sm:right-0 code-block">
+<pre class="absolute top-0 -right-12 sm:right-0 code-block" aria-hidden="true">
 {
   value: Number,
   label: String
@@ -27,7 +27,7 @@ const stats = [
           <stat :stat="stat" />
         </li>
       </ul>
-      <p class="mt-8 ml-8 code-block">for stat in stats</p>
+      <p class="mt-8 ml-8 code-block" aria-hidden="true">for stat in stats</p>
     </div>
     
   </div>

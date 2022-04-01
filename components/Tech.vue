@@ -2,7 +2,7 @@
   <div class="container relative items-center lg:space-x-10 lg:flex">
     <h2 class="mb-10 lg:mb-0 lg:-mt-20 tech-title heading-2 dark:text-white">Using an ever-growing list of technology.</h2>
 
-<pre class="absolute hidden -right-4 sm:right-0 top-16 sm:-top-10 lg:top-0 md:-right-20 code-block sm:block">
+<pre class="absolute hidden -right-4 sm:right-0 top-16 sm:-top-10 lg:top-0 md:-right-20 code-block sm:block" aria-hidden="true">
 /**
  * cms
  * libraries
@@ -28,7 +28,7 @@
         </p>
 
         <p class="code-block">
-          frequentTech.filter("<button @click="filterTech(currentFilter)" class="button button-code" type="button">{{ currentFilter }}</button>")
+          frequentTech.filter("<button @click="filterTech(currentFilter)" class="button button-code" type="button" aria-label="Filter tech">{{ currentFilter }}</button>")
         </p>
       </div>
     </div>

@@ -7,7 +7,7 @@
   <label>message: "<code-input type="text" placeholder="Enter your message" name="message" min-size="20" />"</label>
 }</pre>
 
-<button type="submit" class="button button-function">
+<button type="submit" class="button button-function" aria-label="Submit contact form">
   sendEmail<span class="text-lightula-blue dark:text-darkula-blue">(<span class="text-lightula-green dark:text-darkula-green">form</span>)</span>
 </button>
 </form>

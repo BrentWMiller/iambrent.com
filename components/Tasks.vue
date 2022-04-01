@@ -4,7 +4,7 @@
       // Tasks I've helped undertake and launch<br />
       
     </p>
-    <p class="code-block">
+    <p class="code-block" aria-hidden="true">
       const tasks =
     </p>
 
@@ -18,7 +18,7 @@
     </ul>
 
     <p class="code-block">
-      tasks.sort("<button @click="changeSort(currentSort)" class="button button-code" type="button">{{ currentSort }}</button>")
+      tasks.sort("<button @click="changeSort(currentSort)" class="button button-code" type="button" aria-label="Sort tasks">{{ currentSort }}</button>")
     </p>
 
     <p class="absolute right-0 text-4xl -bottom-10 text-lightula-pink dark:text-darkula-pink">===</p>

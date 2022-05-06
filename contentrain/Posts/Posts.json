@@ -8,5 +8,15 @@
     "categories": [],
     "slug": "test-post",
     "createdAt": 1651800982516
+  },
+  {
+    "ID": "ab0517c0-fa57-4c76-954f-137681f3de10",
+    "title": "Another Test post",
+    "content": "# \tThis is another test",
+    "tags": [],
+    "description": "",
+    "categories": [],
+    "slug": "another-test-post",
+    "createdAt": 1651801085878
   }
 ]

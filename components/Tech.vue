@@ -174,6 +174,15 @@ const TECH_ITEMS = [
     width: "31",
     height: "65",
   },
+  {
+    id: "typescript",
+    label: "Typescript",
+    svg: require("@/assets/icons/typescript.svg"),
+    svgLight: require("@/assets/icons/typescript-light.svg"),
+    type: "workflow",
+    width: "65",
+    height: "65",
+  },
 ];
 
 export default {

@@ -28,10 +28,17 @@
         :key="index"
       >
         <h2 class="text-lg font-medium">{{ snippet.title }}</h2>
-        <pre class="p-4 bg-soft-white-100 dark:bg-gray-900">{{
-          snippet.code
-        }}</pre>
-        <p class="code-block">
+        <button
+          @click="copyToClipBoard(snippet.code)"
+          type="button"
+          class="block w-full text-left"
+        >
+          <pre
+            class="p-4 overflow-hidden overflow-x-auto bg-soft-white-100 dark:bg-gray-900"
+            >{{ snippet.code }}</pre
+          >
+        </button>
+        <p class="block code-block">
           //
           <span v-for="(tag, index) in snippet.tags" :key="index"
             >{{ tag
@@ -89,6 +96,14 @@ export default {
   methods: {
     updateQuery(event) {
       this.snippetQuery = event.target.value;
+    },
+    async copyToClipBoard(code) {
+      try {
+        await navigator.clipboard.writeText(code);
+        console.log("Copying to clipboard was successful!");
+      } catch (error) {
+        console.error("Could not copy code: ", error);
+      }
     },
   },
 };

@@ -1,4 +1,5 @@
 # iambrent.com
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9f5e4979-41ad-4bdd-b7c3-dab85589e1f3/deploy-status)](https://app.netlify.com/sites/iambrent/deploys)
 
 ## Build Setup
 

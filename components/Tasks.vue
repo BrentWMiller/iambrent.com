@@ -39,6 +39,7 @@ export default {
         "Developed dozens of fully custom themes for Drupal and Wordpress",
         "Designed and developed a custom integration to connect time-tracking with a payroll system",
         "Created several custom modules/plugins for Drupal and Wordpress",
+        "Developed custom software to run an interactive game show"
       ],
     }
   },

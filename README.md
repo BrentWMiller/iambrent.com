@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next + Payload Serverless Demo
 
-## Getting Started
+This is a demo showing how to utilize `@payloadcms/next-payload` to deploy Payload serverlessly, in the same repo alongside of a NextJS app.
 
-First, run the development server:
+### Developing locally
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+To develop with this package locally, make sure you have the following required software:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. MongoDB
+2. Node + NPM / Yarn
+3. An S3 bucket to store media
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Getting started
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
+Follow the steps below to spin up a local dev environment:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repo
+2. Run `yarn` or `npm install`
+3. Run `cp .env.example .env` and fill out all ENV variables as shown
+4. Run `yarn dev` to start up the dev server
 
-## Learn More
+From there, you can visit your admin panel via navigating to `http://localhost:3000/admin`. Go ahead and start working!
 
-To learn more about Next.js, take a look at the following resources:
+### Deploying to Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The only thing you need to do to deploy to Vercel is to ensure that you have a Mongo Atlas database connection string and an S3 bucket available. Fill out the same environment variables that are shown in the `.env.example` with your own values, and then you're good to go!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Known gotchas
 
-## Deploy on Vercel
+#### Cold start delays
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+With the nature of serverless functions, you are bound to encounter "cold start" delays when your serverless functions spin up for the first time. Once they're "warm", the problem will go away for a few minutes until the functions become dormant again. But there's little that this package can do about that issue, unfortunately.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you'd like to avoid cold starts with your Payload API, you can deploy on a server-based platform like [Payload Cloud](https://payloadcms.com/new) instead.
+
+#### Need to sign up for additional vendors
+
+To deploy Payload on Vercel, you'll need to configure additional vendors for the following:
+
+- Database (MongoDB Atlas)
+- File storage (AWS S3 or similar) with Payload's [Cloud Storage Plugin](https://github.com/payloadcms/plugin-cloud-storage)
+- Email service (Resend, Sendgrid)
+
+If you don't want to go out and sign up for a separate file hosting service, you can just use [Payload Cloud](https://payloadcms.com/new), which gives you file storage, a MongoDB Atlas database, email service by [Resend](https://resend.com), and lots more.

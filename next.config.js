@@ -11,6 +11,7 @@ const nextConfig = withPayload(
         'nextjs-vercel.payloadcms.com',
         'iambrent-com.vercel.app',
         'iambrent.com',
+        's3.us-east-2.amazonaws.com',
         process.env.NEXT_PUBLIC_APP_URL,
         `${process.env.NEXT_PUBLIC_S3_ENDPOINT}`.replace('https://', ''),
       ],

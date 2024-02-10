@@ -18,9 +18,9 @@ const Stats = (props: Props) => {
 
   return (
     <section className='wrapper'>
-      <div className='bg-yellow rounded-2xl text-yellow-dark min-h-[80dvh] flex items-center py-[10.25rem]'>
+      <div className='bg-theme rounded-2xl text-theme-dark min-h-[80dvh] flex items-center py-[10.25rem]'>
         <div className='container grid gap-10'>
-          <p className='text-code text-yellow-dark'>{'let stats = {'}</p>
+          <p className='text-code text-theme-dark'>{'let stats = {'}</p>
 
           <div className='grid gap-16'>
             <h2 className='text-heading-1 max-w-[43.75rem] text-balance'>With the experience to back it up.</h2>
@@ -35,7 +35,7 @@ const Stats = (props: Props) => {
             </dl>
           </div>
 
-          <p className='text-code text-yellow-dark'>{'}'}</p>
+          <p className='text-code text-theme-dark'>{'}'}</p>
         </div>
       </div>
     </section>

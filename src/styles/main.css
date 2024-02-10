@@ -4,6 +4,19 @@
 @import './typography';
 
 @tailwind base;
-
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --theme-active-base: var(--theme-fresh-base);
+  --theme-active-dark: var(--theme-fresh-dark);
+
+  --theme-voltage-base: #f5b12d;
+  --theme-voltage-dark: #3f0800;
+
+  --theme-fresh-base: #acdad5;
+  --theme-fresh-dark: #2b3a39;
+
+  --theme-error-base: #bc5b5b;
+  --theme-error-dark: #ffe4e4;
+}

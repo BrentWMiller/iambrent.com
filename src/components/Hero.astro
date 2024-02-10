@@ -1,0 +1,35 @@
+---
+import ThemeChanger from '../components/ThemeChanger';
+import ArrowRight from '../components/icons/ArrowRight';
+---
+
+<section class='container min-h-[80dvh] grid items-end'>
+  <div class='grid gap-16 my-[7.5rem]'>
+    <div class='grid gap-10'>
+      <h1 class='row-start-2 text-display'>
+        Eye for design.
+        <br />
+        Love for function<span class='text-gray'>ality.</span>
+      </h1>
+
+      <div>
+        <p class='text-code'>hello()</p>
+        <div class='text-code'>
+          <p class='inline'>let theme = THEMES.</p><ThemeChanger client:idle />
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <a
+        href='#solutions'
+        class='inline-flex items-center justify-between w-full gap-8 max-w-[25.25rem] p-5 pl-[2.75rem] border border-gray-light rounded-full text-[1.5rem] font-medium'
+      >
+        View Solutions
+        <span class='inline-flex size-20 items-center justify-center bg-theme rounded-full transition-colors duration-500 ease-in-out'>
+          <ArrowRight client:visible className='text-theme-dark size-6' />
+        </span>
+      </a>
+    </div>
+  </div>
+</section>

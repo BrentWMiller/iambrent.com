@@ -26,9 +26,9 @@ export default {
           light: '#B9B9B9',
           DEFAULT: '#8f8f8f',
         },
-        yellow: {
-          DEFAULT: '#F5B12D',
-          dark: '#3F0800',
+        theme: {
+          DEFAULT: 'var(--theme-active-base)',
+          dark: 'var(--theme-active-dark)',
         },
       },
     },

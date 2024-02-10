@@ -2,4 +2,8 @@
   html {
     @apply bg-white;
   }
+
+  .wrapper {
+    @apply px-4 max-w-[116rem] w-full mx-auto;
+  }
 }

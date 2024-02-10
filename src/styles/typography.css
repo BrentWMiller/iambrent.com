@@ -2,7 +2,21 @@
   html,
   body {
     @apply antialiased text-black font-body text-[1rem];
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    -ms-text-size-adjust: 100%;
+
+    @media (min-width: 120em) {
+      /* 1920px */
+      font-size: calc(1em * 1.2);
+    }
+
+    @media (min-width: 160em) {
+      /* 2560px - widescreen */
+      font-size: calc(1em * 1.4);
+    }
   }
 
   .text-display {

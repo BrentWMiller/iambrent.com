@@ -17,7 +17,7 @@ const Stats = (props: Props) => {
   ];
 
   return (
-    <section className='px-4'>
+    <section className='wrapper'>
       <div className='bg-yellow rounded-2xl text-yellow-dark min-h-[80dvh] flex items-center py-[10.25rem]'>
         <div className='container grid gap-10'>
           <p className='text-code text-yellow-dark'>{'let stats = {'}</p>

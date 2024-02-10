@@ -30,7 +30,7 @@ export default function Hero({}: {}) {
           >
             View Solutions
             <span className='inline-flex size-20 items-center justify-center bg-yellow rounded-full'>
-              <ArrowRight />
+              <ArrowRight className='text-yellow-dark size-6' />
             </span>
           </a>
         </div>

@@ -7,6 +7,13 @@ export default {
       center: true,
       padding: '1rem',
     },
+    screens: {
+      sm: '40rem',
+      md: '48rem',
+      lg: '64rem',
+      xl: '80rem',
+      '2xl': '96rem',
+    },
     extend: {
       fontFamily: {
         body: ["'PPNeueMontreal'", 'sans-serif'],

@@ -19,7 +19,7 @@ const Footer = (props: Props) => {
   ];
 
   return (
-    <footer className='px-4'>
+    <footer className='wrapper mb-4'>
       <div className='dark bg-black rounded-2xl text-white min-h-[80dvh] flex items-center py-[10.25rem]'>
         <div className='container grid gap-[15rem]'>
           <div className='grid gap-16'>

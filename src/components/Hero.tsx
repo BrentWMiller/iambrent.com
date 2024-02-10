@@ -3,8 +3,8 @@ import ArrowRight from './icons/ArrowRight';
 
 export default function Hero({}: {}) {
   return (
-    <section className='container h-[80vh] grid items-end'>
-      <div className='grid gap-16 mb-[7.5rem]'>
+    <section className='container min-h-[80dvh] grid items-end'>
+      <div className='grid gap-16 my-[7.5rem]'>
         <div className='grid gap-10'>
           <h1 className='row-start-2 text-display'>
             Eye for design.

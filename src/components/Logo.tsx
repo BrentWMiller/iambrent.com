@@ -4,7 +4,7 @@ type Props = {};
 
 const Logo = (props: Props) => {
   return (
-    <a href='/' className='text-code text-black'>
+    <a href='/' className='text-code text-black uppercase'>
       Brent<span className='text-yellow'>_</span>
     </a>
   );

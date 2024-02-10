@@ -14,6 +14,7 @@ export default {
       colors: {
         black: '#1D1D1D',
         gray: {
+          light: '#DFDFDF',
           DEFAULT: '#B9B9B9',
         },
         yellow: {

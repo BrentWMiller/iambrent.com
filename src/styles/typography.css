@@ -6,6 +6,6 @@
   }
 
   .text-code {
-    @apply text-[1.25rem]/[1.875rem] tracking-[0.0625rem] uppercase font-code font-bold text-gray;
+    @apply text-[1.25rem]/[1.875rem] tracking-[0.0625rem] font-code font-bold text-gray;
   }
 }

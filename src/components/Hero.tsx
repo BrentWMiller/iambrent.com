@@ -16,7 +16,7 @@ export default function Hero({}: {}) {
             <p className='text-code'>hello()</p>
             <p className='text-code'>
               let theme = THEMES.
-              <button type='button' className='text-yellow underline'>
+              <button type='button' className='text-yellow-dark bg-yellow rounded-sm underline'>
                 yellow
               </button>
             </p>

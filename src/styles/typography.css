@@ -5,7 +5,28 @@
     text-rendering: optimizeLegibility;
   }
 
+  .text-display {
+    @apply text-[8rem]/[100%] font-bold text-balance;
+  }
+
+  .text-heading-1 {
+    @apply text-[5rem]/[112%] font-medium text-balance;
+  }
+
+  .text-heading-2 {
+    @apply text-[2.125rem]/[120%];
+  }
+
+  .text-heading-3 {
+    @apply text-[1.5rem] font-medium;
+  }
+
   .text-code {
     @apply text-[1.25rem]/[1.875rem] tracking-[0.0625rem] font-code font-bold text-gray;
+    @apply dark:text-gray-light;
+  }
+
+  .text-code-sm {
+    @apply text-[1rem] tracking-[0.08rem] font-code font-bold text-gray;
   }
 }

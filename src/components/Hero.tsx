@@ -4,9 +4,9 @@ import ArrowRight from './icons/ArrowRight';
 export default function Hero({}: {}) {
   return (
     <section className='container h-[80vh] grid items-end'>
-      <div className='grid gap-16'>
+      <div className='grid gap-16 mb-[7.5rem]'>
         <div className='grid gap-10'>
-          <h1 className='row-start-2 text-[8rem]/[100%] font-bold text-balance'>
+          <h1 className='row-start-2 text-display'>
             Eye for design.
             <br />
             Love for function<span className='text-gray'>ality.</span>

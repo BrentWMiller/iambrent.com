@@ -1,10 +1,12 @@
 import React from 'react';
 
-type Props = {};
+type Props = {
+  className?: string;
+};
 
-const Logo = (props: Props) => {
+const Logo = ({ className }: Props) => {
   return (
-    <a href='/' className='text-code text-black uppercase'>
+    <a href='/' className={`${className} text-code uppercase`}>
       Brent<span className='text-yellow'>_</span>
     </a>
   );

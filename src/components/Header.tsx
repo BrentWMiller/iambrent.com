@@ -6,7 +6,7 @@ type Props = {};
 const Header = (props: Props) => {
   return (
     <header className='container flex gap-8 justify-between items-center pt-6'>
-      <Logo />
+      <Logo className='text-black' />
 
       <Navigation />
     </header>

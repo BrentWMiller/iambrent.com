@@ -4,7 +4,11 @@ import '../styles/main.css';
 
 // Component Imports
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import Hero from '../components/Hero';
+import Tech from '../components/Tech';
+import Stats from '../components/Stats';
+import Tasks from '../components/Tasks';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -23,8 +27,15 @@ import Hero from '../components/Hero';
   <body>
     <Header />
     
-    <main>
-      <Hero />
+    <main class="mb-4">
+      <div class="grid gap-4">
+        <Hero />
+        <Tech />
+        <Stats />
+        <Tasks />
+      </div>
     </main>
+
+    <Footer />
   </body>
 </html>

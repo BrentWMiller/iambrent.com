@@ -1,0 +1,8 @@
+/* The integration's default injected base.css file */
+@import './fonts';
+@import './typography';
+
+@tailwind base;
+
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,11 @@
+@layer base {
+  html,
+  body {
+    @apply antialiased text-black font-body text-[1rem];
+    text-rendering: optimizeLegibility;
+  }
+
+  .text-code {
+    @apply text-[1.25rem]/[1.875rem] tracking-[0.0625rem] uppercase font-code font-bold text-gray;
+  }
+}

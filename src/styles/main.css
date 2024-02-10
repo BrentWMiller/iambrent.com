@@ -1,4 +1,5 @@
 /* The integration's default injected base.css file */
+@import './scaffolding';
 @import './fonts';
 @import './typography';
 

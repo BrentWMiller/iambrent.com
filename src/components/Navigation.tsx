@@ -25,9 +25,9 @@ const Navigation = (props: Props) => {
   ];
 
   return (
-    <nav className='flex items-center gap-8 text-code'>
+    <nav className='hidden items-center gap-2 md:gap-4 lg:gap-8 text-code'>
       <p>const menu = [</p>
-      <ul className='flex items-center gap-8 uppercase'>
+      <ul className='flex items-center gap-2 md:gap-4 lg:gap-8 uppercase'>
         {links?.length &&
           links.map((link, index) => (
             <li key={index}>

@@ -56,14 +56,14 @@ const Tasks = (props: Props) => {
 
   return (
     <section className='wrapper'>
-      <div className='dark bg-black rounded-2xl text-white min-h-[80dvh] flex items-center py-[10.25rem]'>
+      <div className='dark bg-black rounded-2xl text-white min-h-[80dvh] flex items-center py-[3rem] md:py-[5rem] lg:py-[10.25rem] px-4 lg:px-10'>
         <div className='container grid gap-10'>
           <p className='text-code'>{'let tasks = {'}</p>
 
           <div className='grid gap-16'>
             <h2 className='text-heading-1 max-w-[59.375rem] text-balance'>A few favorites I've helped develop and launch.</h2>
 
-            <div className='grid grid-cols-3 gap-x-8 gap-y-16'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14 md:gap-y-16'>
               {tasks.map((task, index) => (
                 <div key={index} className='grid gap-5'>
                   <h3 className='text-code-sm uppercase'>{task.category}</h3>
